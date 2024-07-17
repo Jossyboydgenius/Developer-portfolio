@@ -2,7 +2,7 @@ function App() {
 
   return (
     <>
-     <h1>Thanks My Subscribers</h1>
+     <h1 style={{color:'white'}}>Thanks My Subscribers</h1>
     </>
   )
 }
