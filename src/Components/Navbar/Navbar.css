@@ -57,6 +57,11 @@
 }
 
 /* Responsive Code */
+@media (max-width: 1210px){
+    .navbar .handles-container{
+        display: none;
+}
+
 @media (max-width: 1050px){
     .navbar .services-btn{
         display: none;
