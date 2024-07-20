@@ -19,7 +19,7 @@ const Hero = () => {
           {/* // TODO: Change this text to something more personal */}
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Quaerat consectetur sapiente, beatae deserunt reprehenderit eaque hic, ullam distinctio inventore nemo,
-            ea nam facere voluptas maxime laborum. Ipsum, vel? Quo, beatae!
+            ea nam facere voluptas maxime laborum. Ipsum, vel? Quo, behjatae!
           </p>
           <div className="flex-center buttons-wrapper">
             <Link to='services' smooth={true} className='btn primary'>Learn more</Link>
