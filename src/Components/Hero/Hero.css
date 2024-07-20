@@ -24,6 +24,19 @@
     margin-top: 40px;
 }
 
+#hero .achievement-cluster{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
+}
+
+#hero .achievement-cluster .wrapper{
+    padding: 10px 20px;
+}
+
 /* Responsive code */
 @media (max-width: 1050px){
     #hero .info-container *{
