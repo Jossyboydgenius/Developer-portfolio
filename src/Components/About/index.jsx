@@ -10,7 +10,7 @@ const About = () => {
           <h1 className="heading-1">
             <span className="gradient-text">About Me</span>
           </h1>
-          <h4 className="sub-title">
+          <h4 className="sub-title muted">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At distinctio facere omnis alias laborum recusandae magnam harum velit cupiditate,
             veritatis exercitationem blanditiis quas quisquam, est obcaecati. Ullam adipisci hic voluptate.
           </h4>
