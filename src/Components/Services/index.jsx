@@ -1,11 +1,42 @@
 import React from 'react'
 import "./Services.css"
+import { services } from '../../sources'
+import { Link } from 'react-scroll'
 
 const Services = () => {
   return (
-    <div>
-      Services
-    </div>
+    <section id='services'>
+      <div className="wrapper">
+        <div className="section-header">
+          <h1 className="heading-1">
+            <span className="gradient-text">Services</span>
+          </h1>
+          <h4 className="sub-title muted">
+            I transformed your ideaa, consequently your desires into reality,
+            making it into a distintice web project that both inspires and captivates your customers.
+          </h4>
+        </div>
+        <div className="services-container">
+          {
+            services.map((service, index) => (
+                <div className="service" key={index}>
+                  <div className="flex-center icon-wrapper">
+                  {service.icon}
+                  </div>
+                  <div className="details">
+                    <h3 className="name gradient-text">{service.name}</h3>
+                    <p className="muted">{service.description}</p>
+                  </div>
+                  <div className="flex buttons-wrapper">
+                    <button className="btn btn">Read More</button>
+                    <Link to='contact' smooth={true} className='btn'>Get started</Link>
+                  </div>
+                </div>
+            ))
+          }
+        </div>
+        </div>
+    </section>
   )
 }
 
