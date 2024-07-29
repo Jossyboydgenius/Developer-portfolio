@@ -1,0 +1,129 @@
+.project-card{
+    border-radius: 10px;
+    background: var(--bg-accent);
+    border: 1px solid var(--border-primary);
+    transition: background 0.2s, border 0.2s;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card .title{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project-card .picture img{
+    transition: var(--transition)
+}
+
+.project-card:hover img{
+    transform: scale(1.2);
+}
+
+.project-card .details{
+    flex: 1;
+    text-align: left;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.project-card .middle{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-primary);
+    height: 160px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.project-card .middle .description{
+    font-size: 14px;
+}
+
+.project-card .bottom{
+    padding: 1rem 0;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.project-card .stack-container{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.project-card .stack-left,
+.project-card .stack-box{
+    border-radius: 10px;
+    background: var(--bg-secondary);
+    border: .5px solid var(--border-primary);
+    padding: 10px;
+}
+
+.project-card .stack-left{
+    display: flex;
+    align-items: center;
+}
+
+.project-card .stack-right{
+    flex: 1;
+}
+
+.project-card .stack-box-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.project-card .stack-icon-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 16px;
+}
+
+.project-card .stack-icon{
+    font-size: 18px;
+}
+
+.project-card .stack-name{
+    font-size: 15px;
+    text-align: center;
+}
+
+.project-card .buttons-container{
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.project-card .buttons-container .btn-share{
+    padding: 15px 20px;
+    font-size: 18px;
+    border: 1px solid transparent;
+}
+
+.project-card .buttons-container .btn-share:hover{
+    background: transparent;
+    border-color: var(--border-primary);
+}
+
+/* Responsive code */
+@media (max-width: 700px){
+    .project-card .stack-icon{
+        font-size: 14px;
+    }
+
+    .project-card .stack-name{
+        font-size: 12px;
+        text-align: center;
+    }
+}
