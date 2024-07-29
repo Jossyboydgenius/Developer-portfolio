@@ -9,7 +9,7 @@ const SkillCard = ({data, title}) => {
         <div className="skill-content">
             {
             data.map((list, index) => (
-                <div className="skill-details" key={index}>
+                <div className="skill-details" key={index}> 
                 <BsPatchCheckFill className="skill-icon"/>
                 <div className="details">
                     <h4 className="skill-name">{list.skill}</h4>
