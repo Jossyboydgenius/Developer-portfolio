@@ -40,3 +40,14 @@
 .skill-card .skill-details .skill-level{
     font-size: 14px;
 }
+
+/* Respsonsive code */
+@media (max-width: 350px){
+    .skill-card .skill-details .skill-name{
+        font-size: 12px;
+    }
+    
+    .skill-card .skill-details .skill-level{
+        font-size: 10px;
+    }
+}
