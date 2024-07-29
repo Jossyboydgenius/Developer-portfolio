@@ -1,0 +1,28 @@
+#skill .skills-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Respsonsive code */
+@media (max-width: 1024px){
+    #skill .skills-container{
+        grid-template-columns: 100%;
+    }
+
+    #skill .skills-container .skill-card{
+        width: 100%;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 600px){
+    #skill .skills-container{
+        gap: 1rem;
+    }
+
+    #skill .skills-container .skill-card{
+        padding: 2rem 1rem;
+    }
+}
