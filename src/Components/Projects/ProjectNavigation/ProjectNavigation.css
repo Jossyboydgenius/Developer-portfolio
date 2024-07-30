@@ -1,0 +1,50 @@
+.project-navigation{
+    position: relative;
+    width: 100%;
+    min-width: max-content;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 40px;
+    user-select: none;
+}
+
+.project-navigation button{
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--foreground);
+    text-decoration: none;
+    padding: 0 23px;
+    z-index: 1;
+    cursor: pointer;
+    background: transparent;
+}
+
+.project-navigation .indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    border-radius: 10px;
+    transition: var(--transition);
+    cursor: pointer;
+    background: var(--gradient-3);
+}
+
+/* Reponsive code */
+@media (max-width: 700px){
+    .project-navigation button{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px){
+    .project-navigation button{
+        font-size: 10px;
+    }
+}
