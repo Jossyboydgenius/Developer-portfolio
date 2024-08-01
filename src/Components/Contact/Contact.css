@@ -1,0 +1,95 @@
+#contact .wrapper{
+    display: grid;
+    grid-template-columns: 400px auto;
+    gap: 30px;
+}
+
+#contact .contact-options{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+}
+
+#contact .contact-options .option{
+    background: var(--bg-accent);
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    border: solid .5px var(--border-primary);
+    transition: var(--transition);
+}
+
+#contact .contact-options .option:hover{
+    transform: scale(0.98);
+    background: var(--bg-muted);
+}
+
+#contact .contact-options .option .icon-wrapper{
+    width: 4rem;
+    height: 4rem;
+    min-width: 4rem;
+    min-height: 4rem;
+    max-width: 4rem;
+    max-height: 4rem;
+    font-size: 25px;
+    background: transparent;
+}
+
+#contact .contact-options .option:hover .icon-wrapper{
+    color: var(--foreground);
+}
+
+#contact .contact-options .option .value{
+    font-size: 15px;
+    
+}
+
+#contact .contact-form{
+    background: var(--bg-accent);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#contact .title{
+    font-size: 40px;
+}
+
+#contact .row{
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#contact .control{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    background: var(--bg-primary);
+    border-radius: 10px;
+    color: var(--foreground);
+    font-size: 15px;
+    overflow: hidden;
+    transition: var(--transition);
+    border: solid 2px var(--border-primary);
+}
+
+#contact .control:focus{
+    border-color: var(--primary);
+    background: var(--bg-secondary);
+}
+
+#contact .bottom{
+    margin-top: 40px;
+}
+
+#contact .btn{
+    display: block;
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 300px;
+}
+
+input{
+    height: 50px;
+}
