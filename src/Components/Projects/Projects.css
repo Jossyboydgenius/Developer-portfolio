@@ -9,6 +9,19 @@
     margin-top: 40px;
 }
 
+.zoom{
+    animation: zoomIn 0.4s ease;
+}
+
+@keyframes zoomIn{
+    0%{
+        scale: 0.5;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
 /* Responsive code */
 @media (max-width: 700px){
     #projects .projects-container{
