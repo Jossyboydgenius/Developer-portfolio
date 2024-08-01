@@ -131,6 +131,7 @@ img{
   font-size: 20px;
   color: var(--muted-foreground);
   transition: var(--transition);
+  border-radius: 50%;
 }
 
 .icon-wrapper:hover{
