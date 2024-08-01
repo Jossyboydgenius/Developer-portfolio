@@ -1,0 +1,67 @@
+#testimonials .testimonials-container{
+    margin-top: 20px;
+}
+
+#testimonials .slick-track{
+    display: flex !important;
+    gap: 20px;
+}
+
+#testimonials .slick-slide{
+    height: inherit !important;
+    background: var(--bg-accent);
+    padding: 40px 30px;
+    border-radius: 10px;
+    border: .5px solid var(--border-primary);
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    transition: var(--transition);
+}
+
+#testimonials .slick-slide:hover{
+    background: var(--bg-muted);
+}
+
+#testimonials .slick-slide > div{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex: 1;
+    flex-direction: column;
+}
+
+#testimonials .profile{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+#testimonials .profile:hover{
+    opacity: .5;
+}
+
+#testimonials .content{
+    flex: 1;
+    padding: 20px 0;
+}
+
+#testimonials .stars-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--warning);
+}
+
+#testimonials .buttons-container{
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+
+#testimonials .buttons-container .btn:hover{
+    background: transparent;
+}
