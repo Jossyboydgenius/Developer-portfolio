@@ -43,7 +43,7 @@ const ProjectNavigation = ({
       className="indicator"
       style={{
         left:`${offset}px`,
-        right:`${indicatorWidth}px`,
+        width:`${indicatorWidth}px`,
       }}
       />
     </nav>
