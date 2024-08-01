@@ -1,7 +1,7 @@
 .project-navigation{
     position: relative;
     width: 100%;
-    min-width: max-content;
+    max-width: max-content;
     height: 50px;
     display: flex;
     align-items: center;
