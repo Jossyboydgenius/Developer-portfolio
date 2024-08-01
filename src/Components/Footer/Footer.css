@@ -30,5 +30,24 @@
     text-align: center;
 }
 
+/* Responsive code */
+@media (max-width: 800px){
+    #footer .wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+@media (max-width: 500px){
+    #footer .wrapper{
+        grid-template-columns: 100%;
+    }
+
+    #footer .logo,
+    #footer .handles-container{
+    justify-content: center;}
+    }
     
+    #footer .title,
+    #footer .route{
+        text-align: center;
+    }
+}
