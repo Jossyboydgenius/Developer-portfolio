@@ -1,0 +1,34 @@
+#footer{
+    background: var(--bg-accent);
+}
+
+#footer .wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+#footer .handles-container{
+    margin-top: 30px;
+}
+
+#footer .route{
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+#footer .route:hover{
+    color: var(--primary);
+}
+
+
+#footer .copyright{
+    flex-direction: column;
+    padding: 0 20px 50px 20px;
+    text-align: center;
+}
+
+
+    
