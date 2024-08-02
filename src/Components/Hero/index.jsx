@@ -62,18 +62,19 @@ const Hero = () => {
             <span className="cursor"></span>
           </h1>
           <p className="muted" data-aos='fade-up' data-aos-delay='300'>
-            Innovative problem-solver with a passion for creating secure, scalable solutions. 
+            Innovative problem solver with a passion for creating secure, scalable solutions. 
             Leveraging cutting-edge technologies to craft intuitive user experiences and robust backend systems. 
-            Dedicated to delivering high-performance applications that seamlessly blend creativity with technical excellence, 
-            setting new standards in the ever-evolving digital landscape.
+            Dedicated to delivering high performance applications that seamlessly blend creativity with technical excellence, 
+            setting new standards in the ever evolving digital landscape. I bring ideas to life while ensuring top-notch security. 
+            Let's build the future of tech together!
           </p>
           <div className="flex-center buttons-wrapper">
-            <Link to='services' smooth={true} className='btn primary' data-aos='fade-up' data-aos-delay='500'>Learn more</Link>
-            <Link to='contact' smooth={true} className='btn secondary' data-aos='fade-up' data-aos-delay='700'>Get started</Link>
+            <Link to='services' smooth={true} className='btn primary' data-aos='fade-up' data-aos-delay='300'>Learn more</Link>
+            <Link to='contact' smooth={true} className='btn secondary' data-aos='fade-up' data-aos-delay='400'>Get started</Link>
           </div>
         </div>
         <div className="column hero-image" data-aos='fade-left' data-aos-delay='300'>
-          <img src={me} alt="Awe Joseph" />
+          <img src={me} alt="Awe Joseph"/>
         </div>
       </div>
       <div className="achievement-cluster">
