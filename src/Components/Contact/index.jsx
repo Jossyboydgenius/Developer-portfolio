@@ -4,12 +4,12 @@ import { contactOptions } from '../../sources'
 
 const Contact = () => {
   return (
-    <section id='contact'>
+    <section id='contact' data-aos='fade-zoom-in'>
       <div className="wrapper">
         <div className="contact-options">
           {
             contactOptions.map((option, index) => (
-              <div className="flex-center option" key={index}>
+              <div className="flex-center option" data-aos='fade-right' key={index}>
                 <div className="flex-center icon-wrapper">{option.icon}</div>
                 <h4 className="muted">{option.title}</h4>
                 <h3 className="value">{option.value}</h3>
@@ -17,7 +17,7 @@ const Contact = () => {
             ))
           }
         </div>
-        <div className="contact-form">
+        <div className="contact-form" data-aos='fade-left'>
           <div className="top">
             <h1 className="title">
               <span className="gradient-text">Join forces with me!</span>
