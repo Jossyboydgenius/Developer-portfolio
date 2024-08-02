@@ -71,6 +71,22 @@ const Hero = () => {
     return classNames;
   };
 
+  useEffect(() => {
+    const i = loopNum % titles.length;
+    const fullText = titles[i];
+    if (fullText === 'Cybersecurity Engineer') {
+      if (viewportWidth <= 1150 && viewportWidth >= 1075) {
+        document.documentElement.style.setProperty('--typing-font-size', '0.7em');
+      } else if (viewportWidth <= 1074 && viewportWidth >= 1051) {
+        document.documentElement.style.setProperty('--typing-font-size', '0.6em');
+      } else {
+        document.documentElement.style.setProperty('--typing-font-size', '0.8em');
+      }
+    } else {
+      document.documentElement.style.setProperty('--typing-font-size', '0.8em');
+    }
+  }, [viewportWidth, loopNum, titles]);
+
   return (
     <section id='hero'>
       <div className="wrapper info-container">
@@ -82,7 +98,7 @@ const Hero = () => {
             A <span className="gradient-text">Fullstack</span>
           </h1>
           <h1 className="heading-1 typing-container" data-aos='fade-down'>
-            <span className={getClassNames()}>{text}</span>
+            <span className={getClassNames()} style={{ fontSize: 'var(--typing-font-size)' }}>{text}</span>
             <span className="cursor"></span>
           </h1>
           <p className="muted" data-aos='fade-up' data-aos-delay='300'>
