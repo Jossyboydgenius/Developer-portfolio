@@ -1,6 +1,7 @@
 #hero{
     overflow: hidden;
     position: relative;
+    padding-bottom: 50px; 
 }
 
 #hero .info-container{
@@ -22,6 +23,7 @@
 #hero .wrapper .buttons-wrapper{
     justify-content: flex-start;
     margin-top: 40px;
+    margin-bottom: 100px;
 }
 
 #hero .achievement-cluster{
@@ -37,6 +39,26 @@
     padding: 10px 20px;
 }
 
+.typing-text {
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 5px;
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: #fff;
+    margin-left: 5px;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
 /* Responsive code */
 @media (max-width: 1050px){
     #hero .info-container *{
@@ -49,5 +71,15 @@
 
     #hero .info-container .buttons-wrapper{
         justify-content: center;
+    }
+}
+
+@media (max-width: 1120px){
+    #hero {
+        padding-bottom: 90px; 
+    }
+
+    #hero .wrapper .buttons-wrapper {
+    margin-bottom: 30px;
     }
 }
