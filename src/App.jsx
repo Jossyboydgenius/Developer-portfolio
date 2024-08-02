@@ -14,7 +14,8 @@ import "aos/dist/aos.css"
 function App() {
   useEffect(() => {
     Aos.init({
-      duration: 500,
+      duration: 800,
+      once: false,
     easing: 'ease-in-out-sine',
   })
 },[])
