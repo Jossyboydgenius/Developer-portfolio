@@ -30,11 +30,12 @@ const Testimonials = () => {
     <section id='testimonials'>
       <div className="wrapper">
         <div className="section-header">
-          <h1 className="heading-1">
+          <h1 className="heading-1" data-aos='fade-left'>
             <span className="gradient-text">Testimonials</span>
           </h1>
-          <h4 className="sub-title">What my clients are saying</h4>
+          <h4 className="sub-title" data-aos='fade-left' data-aos-delay='400'>What my clients are saying</h4>
         </div>
+        <div data-aos='fade-right'>
         <Slider {...settings} className='testimonials-container' ref={ref}>
           {
             clients.map((list, index) => (
@@ -60,7 +61,8 @@ const Testimonials = () => {
             ))
           }
         </Slider>
-        <div className="flex-center buttons-container">
+        </div>
+        <div className="flex-center buttons-container" data-aos='fade-left'>
           <button 
           className="flex-center btn"
           onClick={() => ref.current.slickPrev()}
