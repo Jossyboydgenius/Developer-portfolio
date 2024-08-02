@@ -9,13 +9,13 @@ const Footer = () => {
   return (
     <footer id='footer'>
       <div className="wrapper">
-        <div className="column">
+        <div className="column" data-aos='fade-right'>
           <Logo/>
           <SocialHandles/>
         </div>
         {
           footer.map((list, index) => (
-            <div className="column" key={index}>
+            <div className="column" data-aos='fade-left' key={index}>
               <h3 className="muted title">{list.title}</h3>
               {
                 list.routes.map((route, index) => (
@@ -28,7 +28,7 @@ const Footer = () => {
           ))
         }
       </div>
-      <div className="flex-center copyright">
+      <div className="flex-center copyright" data-aos='flip-up' data-aos-delay='100'>
         <h4>Copyright &copy; All right reserved | 2024</h4>
         <p className="muted">Built with love by Awe Joseph A.K.A TechApostle</p>
       </div>
@@ -37,4 +37,3 @@ const Footer = () => {
 }
 
 export default Footer
-
