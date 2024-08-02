@@ -14,7 +14,7 @@ const Navbar = () => {
       {openSidebar ? <div className="overlay" onClick={() => setOpenSidebar(!openSidebar)}/>:""}
       <Logo/>
       <div className={`box flex-center tabs-group sidebar ${openSidebar ? 'visible':''}`}>
-        <div 
+        <div
         className="flex-center icon-wrapper cancel-btn"
         onClick={() => setOpenSidebar(!openSidebar)}
         >
