@@ -30,7 +30,7 @@ const Projects = () => {
       setActiveProjects(new_projects);
     }
   return (
-    <section id='projects'>
+    <section id='projects' data-aos='fade-right'>
       <div className="wrapper">
       <div className="section-header">
         <h1 className="heading-1">
