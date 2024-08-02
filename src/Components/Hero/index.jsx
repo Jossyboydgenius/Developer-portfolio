@@ -11,6 +11,7 @@ const Hero = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(300);
+  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
   const titles = ['Software Engineer', 'Web Developer', 'Cybersecurity Engineer'];
 
@@ -19,6 +20,13 @@ const Hero = () => {
       duration: 1000,
       once: false,
     });
+
+    const handleResize = () => {
+      setViewportWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   useEffect(() => {
@@ -47,6 +55,22 @@ const Hero = () => {
     return () => clearTimeout(timer);
   }, [text, isDeleting, loopNum, typingSpeed, titles]);
 
+  const getClassNames = () => {
+    let classNames = 'typing-text';
+    if (text === 'Cybersecurity Engineer') {
+      classNames += ' cybersecurity-engineer';
+      if (viewportWidth <= 1150 && viewportWidth >= 1075) {
+        classNames += ' cybersecurity-engineer-0_7em';
+      } else if (viewportWidth <= 1074 && viewportWidth >= 1051) {
+        classNames += ' cybersecurity-engineer-0_6em';
+      }
+    }
+    if (text !== 'Web Developer') {
+      classNames += ' smaller-text';
+    }
+    return classNames;
+  };
+
   return (
     <section id='hero'>
       <div className="wrapper info-container">
@@ -58,7 +82,7 @@ const Hero = () => {
             A <span className="gradient-text">Fullstack</span>
           </h1>
           <h1 className="heading-1 typing-container" data-aos='fade-down'>
-            <span className={`typing-text ${text !== 'Web Developer' ? 'smaller-text' : ''}`}>{text}</span>
+            <span className={getClassNames()}>{text}</span>
             <span className="cursor"></span>
           </h1>
           <p className="muted" data-aos='fade-up' data-aos-delay='300'>
