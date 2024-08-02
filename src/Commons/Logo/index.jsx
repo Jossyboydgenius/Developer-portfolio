@@ -1,11 +1,11 @@
 import React from 'react'
 import "./Logo.css"
-import { FaLaptopCode } from 'react-icons/fa'
+import { BsJournalCode } from "react-icons/bs";
 
 const Logo = () => {
   return (
     <div className='logo'>
-      <FaLaptopCode className='icon'/>
+      <BsJournalCode className='icon'/>
         <h1>Portfolio</h1>
     </div>
   )
