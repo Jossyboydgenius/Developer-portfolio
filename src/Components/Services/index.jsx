@@ -8,10 +8,10 @@ const Services = () => {
     <section id='services'>
       <div className="wrapper">
         <div className="section-header">
-          <h1 className="heading-1">
+          <h1 className="heading-1" data-aos='fade-left'>
             <span className="gradient-text">Services</span>
           </h1>
-          <h4 className="sub-title muted">
+          <h4 className="sub-title muted" data-aos='fade-right'>
             I transformed your ideaa, consequently your desires into reality,
             making it into a distintice web project that both inspires and captivates your customers.
           </h4>
@@ -19,7 +19,7 @@ const Services = () => {
         <div className="services-container">
           {
             services.map((service, index) => (
-                <div className="service" key={index}>
+                <div className="service" data-aos='fade-left' key={index}>
                   <div className="flex-center icon-wrapper">
                   {service.icon}
                   </div>
