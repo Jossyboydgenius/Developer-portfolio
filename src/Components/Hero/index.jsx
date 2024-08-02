@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react'
-import "./Hero.css"
-import { Link } from 'react-scroll'
-import me from '../../assets/me.png'
-import Achievement from '../../Commons/Achievement'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import React, { useState, useEffect } from 'react';
+import "./Hero.css";
+import { Link } from 'react-scroll';
+import me from '../../assets/me.png';
+import Achievement from '../../Commons/Achievement';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Hero = () => {
-  const [text, setText] = useState('');
+  const [text, setText] = useState('Software Engineer');
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
-  const [typingSpeed, setTypingSpeed] = useState(100);
+  const [typingSpeed, setTypingSpeed] = useState(300);
 
   const titles = ['Software Engineer', 'Web Developer', 'Cybersecurity Engineer'];
 
@@ -28,8 +28,10 @@ const Hero = () => {
 
       if (isDeleting) {
         setText(fullText.substring(0, text.length - 1));
+        setTypingSpeed(10); // Faster deletion
       } else {
         setText(fullText.substring(0, text.length + 1));
+        setTypingSpeed(70); // Normal typing speed
       }
 
       if (!isDeleting && text === fullText) {
@@ -37,13 +39,11 @@ const Hero = () => {
       } else if (isDeleting && text === '') {
         setIsDeleting(false);
         setLoopNum(loopNum + 1);
+        setTypingSpeed(500);
       }
     };
 
-    const timer = setTimeout(() => {
-      handleTyping();
-    }, typingSpeed);
-
+    const timer = setTimeout(handleTyping, typingSpeed);
     return () => clearTimeout(timer);
   }, [text, isDeleting, loopNum, typingSpeed, titles]);
 
@@ -55,14 +55,17 @@ const Hero = () => {
             Hello, I'm <span className='primary'>Awe Joseph</span>
           </h3>
           <h1 className="heading-1" data-aos='fade-up'>
-            A <span className="gradient-text">Fullstack</span>{' '}
-            <span className="typing-text">{text}</span>
+            A <span className="gradient-text">Fullstack</span>
+          </h1>
+          <h1 className="heading-1 typing-container" data-aos='fade-down'>
+            <span className={`typing-text ${text !== 'Web Developer' ? 'smaller-text' : ''}`}>{text}</span>
             <span className="cursor"></span>
           </h1>
           <p className="muted" data-aos='fade-up' data-aos-delay='300'>
-            Passionate about crafting innovative solutions across the full technology
-            stack. From robust backend systems to intuitive user interfaces, I bring ideas to
-            life while ensuring top-notch security. Let's build the future of tech together!
+            Innovative problem-solver with a passion for creating secure, scalable solutions. 
+            Leveraging cutting-edge technologies to craft intuitive user experiences and robust backend systems. 
+            Dedicated to delivering high-performance applications that seamlessly blend creativity with technical excellence, 
+            setting new standards in the ever-evolving digital landscape.
           </p>
           <div className="flex-center buttons-wrapper">
             <Link to='services' smooth={true} className='btn primary' data-aos='fade-up' data-aos-delay='500'>Learn more</Link>
@@ -70,7 +73,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="column hero-image" data-aos='fade-left' data-aos-delay='300'>
-          <img src={me} alt="" />
+          <img src={me} alt="Awe Joseph" />
         </div>
       </div>
       <div className="achievement-cluster">
@@ -79,7 +82,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
