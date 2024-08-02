@@ -74,23 +74,22 @@
     -webkit-text-fill-color: transparent;
 }
 
-.smaller-text {
-    font-size: 0.8em;
+/* Specific font size changes for Cybersecurity Engineer */
+.cybersecurity-engineer-0_7em {
+    font-size: 0.7em;
 }
+
+.cybersecurity-engineer-0_6em {
+    font-size: 0.6em;
+}
+
+/* General smaller text class for titles except Web Developer */
+.smaller-text {
+    font-size: 1em; /* Default smaller font size for other titles */
+}
+
 
 /* Responsive code */
-@media (max-width: 1150px) and (min-width: 1075px) {
-    .typing-text.cybersecurity-engineer {
-        font-size: 0.7em;
-    }
-}
-
-@media (max-width: 1074px) and (min-width: 1051px) {
-    .typing-text.cybersecurity-engineer {
-        font-size: 0.6em;
-    }
-}
-
 @media (max-width: 1050px) {
     #hero .info-container * {
         text-align: center;
