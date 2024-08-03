@@ -104,8 +104,6 @@ const Hero = () => {
           <p className="muted" data-aos='fade-up' data-aos-delay='300'>
             Innovative problem solver with a passion for creating secure, scalable solutions. 
             Leveraging cutting-edge technologies to craft intuitive user experiences and robust backend systems. 
-            Dedicated to delivering high performance applications that seamlessly blend creativity with technical excellence, 
-            setting new standards in the ever evolving digital landscape. I bring ideas to life while ensuring top-notch security. 
             Let's build the future of tech together!
           </p>
           <div className="flex-center buttons-wrapper">
@@ -113,7 +111,7 @@ const Hero = () => {
             <Link to='contact' smooth={true} className='btn secondary' data-aos='fade-up' data-aos-delay='400'>Get started</Link>
           </div>
         </div>
-        <div className="column hero-image" data-aos='fade-left' data-aos-delay='300'>
+        <div className="column hero-image" data-aos='fade-left' data-aos-delay='100'>
           <img src={me} alt="Awe Joseph"/>
         </div>
       </div>
