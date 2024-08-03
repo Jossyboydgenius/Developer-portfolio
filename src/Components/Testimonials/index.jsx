@@ -33,7 +33,7 @@ const Testimonials = () => {
           <h1 className="heading-1" data-aos='fade-left'>
             <span className="gradient-text">Testimonials</span>
           </h1>
-          <h4 className="sub-title" data-aos='fade-left' data-aos-delay='400'>What my clients are saying</h4>
+          <h4 className="sub-title" data-aos='fade-left' data-aos-delay='300'>Feedback from my clients.</h4>
         </div>
         <div data-aos='fade-right'>
         <Slider {...settings} className='testimonials-container' ref={ref}>
