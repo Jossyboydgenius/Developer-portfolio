@@ -3,24 +3,21 @@ import client2 from "./assets/client-2.jpeg";
 import client3 from "./assets/client-3.jpeg";
 import client4 from "./assets/client-4.jpeg";
 import client5 from "./assets/client-5.jpeg";
-import { IoMdAnalytics, IoMdCloud} from "react-icons/io";
-import { IoCallOutline ,IoLocationOutline } from "react-icons/io5";
-import { GrUserExpert } from "react-icons/gr";
-import { MdOutlineSupportAgent,MdOutlineAlternateEmail } from "react-icons/md";
-import { RiExchange2Fill } from "react-icons/ri";
-import { FaInstagram, FaXTwitter, FaYoutube,FaLaptopCode, FaDatabase, FaServer} from "react-icons/fa6";
-import { FaFacebookSquare,FaPaintBrush } from "react-icons/fa";
-import { TfiWrite } from 'react-icons/tfi'
-import {DiReact} from "react-icons/di";
-import {FaNodeJs} from "react-icons/fa";
-import {SiBlockchaindotcom, SiExpress,SiMongodb} from "react-icons/si";
-import { CgFigma } from "react-icons/cg";
-import { TbBrandReactNative } from "react-icons/tb";
-import { SiAdobexd } from "react-icons/si";
+import { FaChartBar, FaCloud, FaPhoneAlt, FaMapMarkerAlt, FaUserCheck, FaHeadset, FaSyncAlt, FaLaptopCode, FaDatabase, FaServer, FaInstagram, FaTwitter, FaGithub, FaPaintBrush, FaReact, FaNodeJs, FaFigma, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { MdEmail, MdAnalytics } from "react-icons/md";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiExpress, SiMongodb, SiSwift, SiKotlin, SiPostman, SiXcode, SiFlutter, SiAdobexd } from "react-icons/si";
+import { TbBrandReactNative, TbDeviceMobileCode } from "react-icons/tb";
+import { AiFillAndroid } from "react-icons/ai";
+import { BsRobot } from "react-icons/bs";
+import { FaHandsHelping } from "react-icons/fa";
+import { TfiWrite } from "react-icons/tfi";
+import { IoShieldCheckmark } from "react-icons/io5";
 
 export const tabs = [
     {name:"About Me",id:'about'},
-    {name:"Skill",id:'skill'},
+    {name:"Skills",id:'skill'},
     {name:"Services",id:'services'},
     {name:"Projects",id:'projects'},
     {name:"Testimonials",id:'testimonials'},
@@ -29,32 +26,32 @@ export const tabs = [
 export const whyChooseMe = [
   {
     title: "Unparalleled Technical Expertise",
-    icon: <GrUserExpert/>,
+    icon: <FaUserCheck/>,
     link: "",
   },
   {
     title: "Data Driven Solutions",
-    icon: <IoMdAnalytics/>,
+    icon: <FaChartBar/>,
     link: "",
   },
   {
     title: "Dedicated Client Support",
-    icon: <MdOutlineSupportAgent/>,
+    icon: <FaHeadset/>,
     link: "",
   },
   {
     title: "Innovative Problem Solving",
-    icon: <RiExchange2Fill/>,
+    icon: <FaSyncAlt/>,
     link: "",
   },
   {
-    title: "Agile Development Approach",
+    title: "Dynamic Development Approach",
     icon: <FaLaptopCode/>,
     link: "",
   },
   {
     title: "Cybersecurity Focus",
-    icon: <IoMdAnalytics/>,
+    icon: <IoShieldCheckmark/>,
     link: "",
   },
   {
@@ -64,18 +61,18 @@ export const whyChooseMe = [
   },
   {
     title: "Collaborative Mindset",
-    icon: <MdOutlineSupportAgent/>,
+    icon: <FaHandsHelping/>,
     link: "",
   },
 ]
 
 export const services = [
   {
-    name: "UI/UX Design",
-    icon: <FaPaintBrush/>,
-    description: `I create intuitive and visually appealing user interfaces that enhance user experience. 
-    By combining aesthetics with functionality, I ensure your digital products not only look great but also 
-    provide seamless interaction for your users.`,
+    name: "Mobile App Development",
+    icon: <TbDeviceMobileCode/>,
+    description: `I develop cross platform mobile applications that provide seamless user experiences 
+    across different devices. Using React Native, I create efficient, high performance apps that feel 
+    native on both iOS and Android platforms.`,
   },
   {
     name: "Web Development",
@@ -85,25 +82,25 @@ export const services = [
     your business needs while providing optimal performance and scalability.`,
   },
   {
-    name: "Content Creation",
-    icon: <TfiWrite/>,
-    description: `I craft compelling digital content that engages your audience and strengthens your brand. 
-    Whether it's blog posts, social media content, or technical documentation, I ensure your message is 
-    clear, concise, and impactful.`,
-  },
-  {
     name: "Cybersecurity Solutions",
-    icon: <IoMdAnalytics/>,
+    icon: <IoShieldCheckmark/>,
     description: `I implement robust security measures to protect your digital assets from potential threats. 
     My expertise in cybersecurity ensures that your applications and systems are fortified against 
     vulnerabilities, giving you peace of mind in an increasingly digital world.`,
   },
   {
-    name: "Mobile App Development",
-    icon: <TbBrandReactNative/>,
-    description: `I develop cross platform mobile applications that provide seamless user experiences 
-    across different devices. Using React Native, I create efficient, high performance apps that feel 
-    native on both iOS and Android platforms.`,
+    name: "UI/UX Design",
+    icon: <FaPaintBrush/>,
+    description: `I create intuitive and visually appealing user interfaces that enhance user experience. 
+    By combining aesthetics with functionality, I ensure your digital products not only look great but also 
+    provide seamless interaction for your users.`,
+  },
+  {
+    name: "Content Creation",
+    icon: <TfiWrite/>,
+    description: `I craft compelling digital content that engages your audience and strengthens your brand. 
+    Whether it's blog posts, social media content, or technical documentation, I ensure your message is 
+    clear, concise, and impactful.`,
   },
   {
     name: "Database Design & Management",
@@ -119,34 +116,46 @@ export const services = [
   },
   {
     name: "Cloud Solutions",
-    icon: <IoMdCloud/>,
+    icon: <FaCloud/>,
     description: `I leverage cloud technologies to build scalable, resilient applications. From serverless 
     architectures to containerized deployments, I help you harness the full potential of cloud platforms like AWS, 
     Azure, or Google Cloud.`,
   },
   {
-    name: "Blockchain Development",
-    icon: <SiBlockchaindotcom/>,
-    description: `I develop decentralized applications (dApps) and smart contracts, leveraging blockchain 
-    technology to create secure, transparent, and efficient solutions for various industries.`,
+    name: "AI and Machine Learning Integration",
+    icon: <BsRobot/>,
+    description: `I integrate AI and machine learning capabilities into applications, 
+    leveraging these technologies to create intelligent, data-driven solutions that can 
+    adapt and improve over time.`,
   },
 ]
 
-
 export const skills = [
   {
-    title: "UI/UX",
+    title: "App Development",
     data: [
       {
-        skill: "Figma",
+        skill: "React Native",
         level: "Experienced",
       },
       {
-        skill: "Sketch",
+        skill: "Flutter",
         level: "Intermediate",
       },
       {
-        skill: "Adobe XD",
+        skill: "iOS (Swift)",
+        level: "Intermediate",
+      },
+      {
+        skill: "Android (Kotlin)",
+        level: "Intermediate",
+      },
+      {
+        skill: "Xcode",
+        level: "Intermediate",
+      },
+      {
+        skill: "Android Studio",
         level: "Intermediate",
       },
     ]
@@ -167,11 +176,11 @@ export const skills = [
         level: "Experienced",
       },
       {
-        skill: "Tailwind",
+        skill: "TypeScript",
         level: "Intermediate",
       },
       {
-        skill: "Bootstrap",
+        skill: "Tailwind",
         level: "Experienced",
       },
       {
@@ -179,8 +188,12 @@ export const skills = [
         level: "Experienced",
       },
       {
-        skill: "React Native",
+        skill: "Bootstrap",
         level: "Experienced",
+      },
+      {
+        skill: "Vue.js",
+        level: "Intermediate",
       },
     ]
   },
@@ -211,26 +224,9 @@ export const skills = [
         skill: "MySQL",
         level: "Experienced",
       },
-    ]
-  },
-  {
-    title: "App Development",
-    data: [
       {
-        skill: "React Native",
-        level: "Experienced",
-      },
-      {
-        skill: "Flutter",
+        skill: "PostgreSQL",
         level: "Intermediate",
-      },
-      {
-        skill: "iOS (Swift)",
-        level: "Basic",
-      },
-      {
-        skill: "Android (Kotlin)",
-        level: "Basic",
       },
     ]
   },
@@ -243,11 +239,23 @@ export const skills = [
       },
       {
         skill: "Penetration Testing",
-        level: "Intermediate",
+        level: "Experienced",
       },
       {
         skill: "Security Auditing",
         level: "Experienced",
+      },
+      {
+        skill: "Digital Forensics",
+        level: "Intermediate",
+      },
+      {
+        skill: "Threat Modeling",
+        level: "Intermediate",
+      },
+      {
+        skill: "Incident Response",
+        level: "Intermediate",
       },
     ]
   },
@@ -270,6 +278,14 @@ export const skills = [
         skill: "CI/CD Pipelines",
         level: "Intermediate",
       },
+      {
+        skill: "Azure",
+        level: "Basic",
+      },
+      {
+        skill: "Google Cloud Platform",
+        level: "Basic",
+      },
     ]
   },
   {
@@ -289,6 +305,10 @@ export const skills = [
       },
       {
         skill: "Database Optimization",
+        level: "Intermediate",
+      },
+      {
+        skill: "Data Modeling",
         level: "Intermediate",
       },
     ]
@@ -312,15 +332,36 @@ export const skills = [
         skill: "API Security",
         level: "Experienced",
       },
+      {
+        skill: "Postman",
+        level: "Experienced",
+      },
+    ]
+  },
+  {
+    title: "UI/UX",
+    data: [
+      {
+        skill: "Figma",
+        level: "Experienced",
+      },
+      {
+        skill: "Sketch",
+        level: "Intermediate",
+      },
+      {
+        skill: "Adobe XD",
+        level: "Intermediate",
+      },
+      {
+        skill: "InVision",
+        level: "Intermediate",
+      },
     ]
   },
   {
     title: "Emerging Technologies",
     data: [
-      {
-        skill: "Blockchain",
-        level: "Basic",
-      },
       {
         skill: "Machine Learning",
         level: "Basic",
@@ -331,6 +372,10 @@ export const skills = [
       },
       {
         skill: "Serverless Architecture",
+        level: "Intermediate",
+      },
+      {
+        skill: "Progressive Web Apps",
         level: "Intermediate",
       },
     ]
@@ -369,7 +414,7 @@ export const projects = [
     stack: [
       {
         name: "ReactJs",
-        icon: <DiReact/>,
+        icon: <FaReact/>,
         iconColor: "skyblue",
       },
       {
@@ -401,7 +446,7 @@ export const projects = [
     stack: [
       {
         name: "ReactJs",
-        icon: <DiReact/>,
+        icon: <FaReact/>,
         iconColor: "skyblue",
       },
       {
@@ -466,7 +511,7 @@ export const projects = [
     stack: [
       {
         name: "Figma",
-        icon: <CgFigma/>,
+        icon: <FaFigma/>,
         iconColor: "orangered",
       },
     ]
@@ -548,45 +593,44 @@ export const clients = [
   },
 ];
 
-
 export const contactOptions = [
   {
     title:"Email",
     value:"awejosepholaitan@gmail.com",
-    icon:<MdOutlineAlternateEmail />,
+    icon:<MdEmail />,
   },
   {
     title:"Phone Number",
     value:"+2349034018552",
-    icon:<IoCallOutline/>,
+    icon:<FaPhoneAlt/>,
   },
   {
     title:"Address",
     value:"Lagos, Nigeria",
-    icon:<IoLocationOutline/>,
+    icon:<FaMapMarkerAlt/>,
   },
 ]
 
-export const socialHandles = [
+export const socialHandles = [   
+    {
+      name:"LinkedIn",
+      icon:<FaLinkedin/>,
+      link:"https://www.linkedin.com/in/awejosepholaitan",
+    },
     {
       name:"Instagram",
       icon:<FaInstagram />,
-      link:"",
-    },
-    {
-      name:"Facebook",
-      icon:<FaFacebookSquare/>,
-      link:"",
+      link:"https://instagram.com/tech_apostle/",
     },
     {
       name:"Twitter",
       icon:<FaXTwitter/>,
-      link:"",
+      link:"https://twitter.com/@kiss_johzzy",
     },
     {
-      name:"Youtube",
-      icon:<FaYoutube/>,
-      link:"https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1",
+      name:"Github",
+      icon:<FaGithub/>,
+      link:"https://github.com/Jossyboydgenius",
     },
 ];
 
@@ -595,7 +639,7 @@ export const footer = [
     title:"Explore",
     routes:[
       {name:"About Me",id:'about'},
-      {name:"Skill",id:'skill'},
+      {name:"Skills",id:'skill'},
     ]
   },
   {
@@ -615,5 +659,3 @@ export const footer = [
       ]
     },
 ]
-
-    
