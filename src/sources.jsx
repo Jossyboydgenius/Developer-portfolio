@@ -554,6 +554,7 @@ export const clients = [
   {
     image: client1,
     name: 'Alex Thompson',
+    position: 'CTO of TechInnovate',
     review: `Working with Awe Joseph was a game changer for our startup. His technical expertise 
              and innovative approach transformed our ideas into a robust, scalable platform. What 
              impressed me most was his ability to anticipate potential security issues and address 
@@ -562,6 +563,7 @@ export const clients = [
   {
     image: client2,
     name: 'Sarah Chen',
+    position: 'Product Manager at GlobalSoft',
     review: `I can't speak highly enough of Awe Joseph's work. He took our outdated website and 
              turned it into a modern, user friendly interface that has significantly improved our 
              customer engagement. His attention to detail and commitment to delivering a secure, 
@@ -570,6 +572,7 @@ export const clients = [
   {
     image: client3,
     name: 'Michael Okonkwo',
+    position: 'Founder of AfriTech Solutions',
     review: `Awe Joseph's expertise in both frontend and backend development was crucial in 
              building our complex web application. He navigated challenging technical requirements 
              with ease and always kept us informed about the progress. His cybersecurity insights 
@@ -578,6 +581,7 @@ export const clients = [
   {
     image: client4,
     name: 'Emily Rodriguez',
+    position: 'COO of MobileFirst Inc.',
     review: `We hired Awe Joseph to develop a mobile app for our business, and the results exceeded 
              our expectations. His proficiency in React Native delivered a smooth, responsive app 
              that our users love. Moreover, his proactive approach to security gave us confidence 
@@ -586,6 +590,7 @@ export const clients = [
   {
     image: client5,
     name: 'David Nwosu',
+    position: 'IT Director at AfriBank',
     review: `Awe Joseph's technical skills are matched only by his excellent communication and 
              project management abilities. He took the time to understand our business needs and 
              delivered a solution that not only met but exceeded our requirements. His cybersecurity 
