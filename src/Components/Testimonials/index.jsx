@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, { useRef } from 'react'
 import "./Testimonials.css"
 import Slider from 'react-slick'
 import { clients } from '../../sources'
@@ -39,14 +39,14 @@ const Testimonials = () => {
         <Slider {...settings} className='testimonials-container' ref={ref}>
           {
             clients.map((list, index) => (
-              <React.Fragment key = {index}>
+              <React.Fragment key={index}>
               <div className="flex">
                 <div className="profile">
                   <img src={list.image} alt={list.name} />
                 </div>
                 <div className="details">
                   <h3 className="name">{list.name}</h3>
-                  <small className="muted">CEO of First Bank</small>
+                  <small className="muted">{list.position}</small>
                 </div>
               </div>
               <p className="p muted content">{list.review}</p>
