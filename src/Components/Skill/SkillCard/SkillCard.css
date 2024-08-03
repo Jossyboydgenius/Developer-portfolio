@@ -2,7 +2,8 @@
     padding: 30px 40px;
     border: 1px solid transparent;
     border-radius: 20px;
-    background: var(--transition);
+    transition: var(--transition);
+    background: var(--bg-accent);
 }
 
 .skill-card:hover{
