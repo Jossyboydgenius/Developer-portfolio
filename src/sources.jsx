@@ -28,129 +28,205 @@ export const tabs = [
 
 export const whyChooseMe = [
   {
-    title:"Unmatched Local Expertise",
-    icon:<GrUserExpert/>,
-    link:"",
+    title: "Unparalleled Technical Expertise",
+    icon: <GrUserExpert/>,
+    link: "",
   },
   {
-    title:"Comprehensive Market Analysise",
-    icon:<IoMdAnalytics/>,
-    link:"",
+    title: "Data-Driven Solutions",
+    icon: <IoMdAnalytics/>,
+    link: "",
   },
   {
-    title:"Dedicated Client Support",
-    icon:<MdOutlineSupportAgent/>,
-    link:"",
+    title: "Dedicated Client Support",
+    icon: <MdOutlineSupportAgent/>,
+    link: "",
   },
   {
-    title:"Innovative Marketing Strategies",
-    icon:<RiExchange2Fill/>,
-    link:"",
-  },
-]
-export const services = [
-  {
-    name:"UI/UX Design",
-    icon:<FaPaintBrush/>,
-    description:`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione 
-    voluptatum earum quam tempore, repellat aut vero ut eum, provident accusamus recusandae 
-    eligendi, adipisci sequi reiciendis quisquam? Sapiente optio rerum sequi!`,
+    title: "Innovative Problem-Solving",
+    icon: <RiExchange2Fill/>,
+    link: "",
   },
   {
-    name:"Web Development",
-    icon:<FaLaptopCode/>,
-    description:`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione 
-    voluptatum earum quam tempore, repellat aut vero ut eum, provident accusamus recusandae 
-    eligendi, adipisci sequi reiciendis quisquam? Sapiente optio rerum sequi!`,
+    title: "Agile Development Approach",
+    icon: <FaLaptopCode/>,
+    link: "",
   },
   {
-    name:"Content Creation",
-    icon:<TfiWrite/>,
-    description:`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione 
-    voluptatum earum quam tempore, repellat aut vero ut eum, provident accusamus recusandae 
-    eligendi, adipisci sequi reiciendis quisquam? Sapiente optio rerum sequi!`,
+    title: "Cybersecurity Focus",
+    icon: <IoMdAnalytics/>,
+    link: "",
   },
-  
+  {
+    title: "Continuous Learning",
+    icon: <TfiWrite/>,
+    link: "",
+  },
+  {
+    title: "Collaborative Mindset",
+    icon: <MdOutlineSupportAgent/>,
+    link: "",
+  },
 ]
 
+export const services = [
+  {
+    name: "UI/UX Design",
+    icon: <FaPaintBrush/>,
+    description: `I create intuitive and visually appealing user interfaces that enhance user experience. 
+    By combining aesthetics with functionality, I ensure your digital products not only look great but also 
+    provide seamless interaction for your users.`,
+  },
+  {
+    name: "Web Development",
+    icon: <FaLaptopCode/>,
+    description: `From responsive websites to complex web applications, I deliver robust solutions 
+    using cutting-edge technologies. My full-stack expertise ensures end-to-end development that meets 
+    your business needs while providing optimal performance and scalability.`,
+  },
+  {
+    name: "Content Creation",
+    icon: <TfiWrite/>,
+    description: `I craft compelling digital content that engages your audience and strengthens your brand. 
+    Whether it's blog posts, social media content, or technical documentation, I ensure your message is 
+    clear, concise, and impactful.`,
+  },
+  {
+    name: "Cybersecurity Solutions",
+    icon: <IoMdAnalytics/>,
+    description: `I implement robust security measures to protect your digital assets from potential threats. 
+    My expertise in cybersecurity ensures that your applications and systems are fortified against 
+    vulnerabilities, giving you peace of mind in an increasingly digital world.`,
+  },
+  {
+    name: "Mobile App Development",
+    icon: <TbBrandReactNative/>,
+    description: `I develop cross-platform mobile applications that provide seamless user experiences 
+    across different devices. Using React Native, I create efficient, high-performance apps that feel 
+    native on both iOS and Android platforms.`,
+  },
+]
 
 export const skills = [
   {
-      title:"UI/UX",
-      data:[
-          {
-              skill:"Figma",
-              level:"Experienced",
-          },
-          {
-              skill:"Sketch",
-              level:"Intermediate",
-          },
-          {
-              skill:"XD",
-              level:"Intermediate",
-          },
-      ]
+    title: "UI/UX",
+    data: [
+      {
+        skill: "Figma",
+        level: "Experienced",
+      },
+      {
+        skill: "Sketch",
+        level: "Intermediate",
+      },
+      {
+        skill: "Adobe XD",
+        level: "Intermediate",
+      },
+    ]
   },
   {
-      title:"Frontend Development",
-      data:[
-          {
-              skill:"HTML",
-              level:"Experienced",
-          },
-          {
-              skill:"CSS",
-              level:"Experienced",
-          },
-          {
-              skill:"JavaScript",
-              level:"Experienced",
-          },
-          {
-              skill:"Tailwind",
-              level:"Intermediate",
-          },
-          {
-              skill:"Bootstrap",
-              level:"Experienced",
-          },
-          {
-              skill:"React",
-              level:"Experienced",
-          },
-          {
-              skill:"React Native",
-              level:"Experienced",
-          },
-      ]
+    title: "Frontend Development",
+    data: [
+      {
+        skill: "HTML",
+        level: "Experienced",
+      },
+      {
+        skill: "CSS",
+        level: "Experienced",
+      },
+      {
+        skill: "JavaScript",
+        level: "Experienced",
+      },
+      {
+        skill: "Tailwind",
+        level: "Intermediate",
+      },
+      {
+        skill: "Bootstrap",
+        level: "Experienced",
+      },
+      {
+        skill: "React",
+        level: "Experienced",
+      },
+      {
+        skill: "React Native",
+        level: "Experienced",
+      },
+    ]
   },
   {
-      title:"Backend Development",
-      data:[
-          {
-              skill:"Node JS",
-              level:"Experienced",
-          },
-          {
-              skill:"MangoDB",
-              level:"Intermediate",
-          },
-          {
-              skill:"PHP",
-              level:"Experienced",
-          },
-          {
-              skill:"Python",
-              level:"Intermediate",
-          },
-          {
-              skill:"MySQL",
-              level:"Experienced",
-          },
-      ]
+    title: "Backend Development",
+    data: [
+      {
+        skill: "Node.js",
+        level: "Experienced",
+      },
+      {
+        skill: "Express.js",
+        level: "Experienced",
+      },
+      {
+        skill: "MongoDB",
+        level: "Intermediate",
+      },
+      {
+        skill: "PHP",
+        level: "Experienced",
+      },
+      {
+        skill: "Python",
+        level: "Intermediate",
+      },
+      {
+        skill: "MySQL",
+        level: "Experienced",
+      },
+    ]
+  },
+  {
+    title: "DevOps & Tools",
+    data: [
+      {
+        skill: "Git",
+        level: "Experienced",
+      },
+      {
+        skill: "Docker",
+        level: "Intermediate",
+      },
+      {
+        skill: "CI/CD",
+        level: "Intermediate",
+      },
+      {
+        skill: "AWS",
+        level: "Intermediate",
+      },
+    ]
+  },
+  {
+    title: "Cybersecurity",
+    data: [
+      {
+        skill: "Network Security",
+        level: "Experienced",
+      },
+      {
+        skill: "Penetration Testing",
+        level: "Intermediate",
+      },
+      {
+        skill: "Security Auditing",
+        level: "Experienced",
+      },
+    ]
   },
 ]
+
 
 
 export const projects = [
@@ -334,61 +410,62 @@ export const projects = [
 
 export const clients = [
   {
-    image:client1,
-    name:'Samuel Eze',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-           veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud 
-           exercitation ullamco laboris`
+    image: client1,
+    name: 'Alex Thompson',
+    review: `Working with Awe Joseph was a game-changer for our startup. His technical expertise 
+             and innovative approach transformed our ideas into a robust, scalable platform. What 
+             impressed me most was his ability to anticipate potential security issues and address 
+             them proactively. A true professional who delivers beyond expectations!`
   },
   {
-    image:client2,
-    name:'Richael Linda',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
+    image: client2,
+    name: 'Sarah Chen',
+    review: `I can't speak highly enough of Awe Joseph's work. He took our outdated website and 
+             turned it into a modern, user-friendly interface that has significantly improved our 
+             customer engagement. His attention to detail and commitment to delivering a secure, 
+             high-performance solution was evident throughout the project.`
   },
   {
-    image:client3,
-    name:'Gloria Chiwendu',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-           veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud 
-           exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laboris`
+    image: client3,
+    name: 'Michael Okonkwo',
+    review: `Awe Joseph's expertise in both frontend and backend development was crucial in 
+             building our complex web application. He navigated challenging technical requirements 
+             with ease and always kept us informed about the progress. His cybersecurity insights 
+             added an extra layer of value to the project. Highly recommended!`
   },
   {
-    image:client4,
-    name:'Precious Stone',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
+    image: client4,
+    name: 'Emily Rodriguez',
+    review: `We hired Awe Joseph to develop a mobile app for our business, and the results exceeded 
+             our expectations. His proficiency in React Native delivered a smooth, responsive app 
+             that our users love. Moreover, his proactive approach to security gave us confidence 
+             in the integrity of our product.`
   },
   {
-    image:client5,
-    name:'Ndubisi John',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
+    image: client5,
+    name: 'David Nwosu',
+    review: `Awe Joseph's technical skills are matched only by his excellent communication and 
+             project management abilities. He took the time to understand our business needs and 
+             delivered a solution that not only met but exceeded our requirements. His cybersecurity 
+             expertise was an added bonus that ensured our peace of mind.`
   },
-
 ];
+
 
 export const contactOptions = [
   {
     title:"Email",
-    value:"mradinuba@gmail.com",
+    value:"awejosepholaitan@gmail.com",
     icon:<MdOutlineAlternateEmail />,
   },
   {
     title:"Phone Number",
-    value:"+2348149121918",
+    value:"+2349034018552",
     icon:<IoCallOutline/>,
   },
   {
     title:"Address",
-    value:"Gwarinpa, Abuja, Nigeria",
+    value:"Lagos, Nigeria",
     icon:<IoLocationOutline/>,
   },
 ]
