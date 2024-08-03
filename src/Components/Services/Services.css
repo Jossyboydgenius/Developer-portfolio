@@ -14,7 +14,7 @@
     flex-direction: column;
     border-radius: 10px;
     background: var(--bg-secondary);
-    border: solid 12px transparent;
+    border: solid 2px transparent;
 }
 
 #services .service:hover{
