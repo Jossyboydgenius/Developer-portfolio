@@ -71,8 +71,8 @@ export const services = [
     name: "Mobile App Development",
     icon: <TbDeviceMobileCode/>,
     description: `I develop cross platform mobile applications that provide seamless user experiences 
-    across different devices. Using React Native, I create efficient, high performance apps that feel 
-    native on both iOS and Android platforms.`,
+    across different devices. Leveraging versatile development frameworks, I craft seamless, high-performance 
+    applications that deliver an exceptional user experience on both iOS and Android platforms.`,
   },
   {
     name: "Web Development",
@@ -135,12 +135,12 @@ export const skills = [
     title: "App Development",
     data: [
       {
-        skill: "React Native",
+        skill: "Flutter",
         level: "Experienced",
       },
       {
-        skill: "Flutter",
-        level: "Intermediate",
+        skill: "React Native",
+        level: "Experienced",
       },
       {
         skill: "iOS (Swift)",
@@ -152,11 +152,11 @@ export const skills = [
       },
       {
         skill: "Xcode",
-        level: "Intermediate",
+        level: "Experienced",
       },
       {
         skill: "Android Studio",
-        level: "Intermediate",
+        level: "Experienced",
       },
     ]
   },
@@ -177,7 +177,7 @@ export const skills = [
       },
       {
         skill: "TypeScript",
-        level: "Intermediate",
+        level: "Experienced",
       },
       {
         skill: "Tailwind",
@@ -189,7 +189,7 @@ export const skills = [
       },
       {
         skill: "Bootstrap",
-        level: "Experienced",
+        level: "Intermediate",
       },
       {
         skill: "Vue.js",
@@ -210,15 +210,11 @@ export const skills = [
       },
       {
         skill: "MongoDB",
-        level: "Intermediate",
-      },
-      {
-        skill: "PHP",
         level: "Experienced",
       },
       {
         skill: "Python",
-        level: "Intermediate",
+        level: "Experienced",
       },
       {
         skill: "MySQL",
@@ -226,6 +222,10 @@ export const skills = [
       },
       {
         skill: "PostgreSQL",
+        level: "Intermediate",
+      },
+      {
+        skill: "PHP",
         level: "Intermediate",
       },
     ]
@@ -247,7 +247,7 @@ export const skills = [
       },
       {
         skill: "Digital Forensics",
-        level: "Intermediate",
+        level: "Experienced",
       },
       {
         skill: "Threat Modeling",
@@ -284,7 +284,7 @@ export const skills = [
       },
       {
         skill: "Google Cloud Platform",
-        level: "Basic",
+        level: "Intermediate",
       },
     ]
   },
@@ -297,7 +297,7 @@ export const skills = [
       },
       {
         skill: "MongoDB",
-        level: "Intermediate",
+        level: "Experienced",
       },
       {
         skill: "Redis",
@@ -364,7 +364,7 @@ export const skills = [
     data: [
       {
         skill: "Machine Learning",
-        level: "Basic",
+        level: "Intermediate",
       },
       {
         skill: "IoT Development",
@@ -583,7 +583,7 @@ export const clients = [
     name: 'Emily Rodriguez',
     position: 'COO of MobileFirst Inc.',
     review: `We hired Awe Joseph to develop a mobile app for our business, and the results exceeded 
-             our expectations. His proficiency in React Native delivered a smooth, responsive app 
+             our expectations. His proficiency in Flutter delivered a smooth, responsive app 
              that our users love. Moreover, his proactive approach to security gave us confidence 
              in the integrity of our product.`
   },
