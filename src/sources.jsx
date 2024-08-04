@@ -392,7 +392,7 @@ export const projects = [
     revolutionizes education, offering an intuitive interface that adapts to each student's unique learning style. 
     Smart features like personalized study plans and real time progress tracking make learning engaging and 
     efficient. Step into the future of education where technology and pedagogy blend seamlessly.`,
-    demoLink: "https://google.com/",
+    demoLink: "https://github.com/Jossyboydgenius/Wisdom-Wizard-GPT.git",
     stack: [
       {
         name: "XD",
@@ -410,7 +410,7 @@ export const projects = [
     Seamlessly blending aesthetics with functionality, our platform offers more than just transactions, it creates 
     shopping experiences. From AI powered product recommendations to one click checkouts, every feature is 
     designed to delight your customers and boost your conversions. Welcome to the future of online retail.`,
-    demoLink: "https://google.com/",
+    demoLink: "https://github.com/Jossyboydgenius/E-shop.git",
     stack: [
       {
         name: "ReactJs",
@@ -442,7 +442,7 @@ export const projects = [
     This platform is where imagination meets innovation, allowing engineers to design, simulate, 
     and optimize robotic systems with unprecedented ease. From drag and drop component assembly 
     to real time 3D visualization, we're not just building robots, we're crafting the future of automation.`,
-    demoLink: "https://google.com/",
+    demoLink: "https://wakatime.com/@TechApostle",
     stack: [
       {
         name: "ReactJs",
@@ -475,7 +475,7 @@ export const projects = [
     real time collaboration, customizable dashboards, and intelligent task prioritization, 
     your team's productivity will soar to new heights. It's not just about managing projects,
     it's about empowering teams to achieve greatness.`,
-    demoLink: "https://google.com/",
+    demoLink: "https://github.com/Jossyboydgenius/Blog-App.git",
     stack: [
       {
         name: "React Native",
@@ -507,7 +507,7 @@ export const projects = [
     power at your fingertips with a sleek, intuitive interface. From seamless transactions to 
     personalized financial insights, every tap brings you closer to your financial goals. It's not 
     just a banking app, it's your personal financial companion, available 24/7.`,
-    demoLink: "https://google.com/",
+    demoLink: "https://awejosepholaitan.vercel.app/",
     stack: [
       {
         name: "Figma",
@@ -525,7 +525,7 @@ export const projects = [
     acquisition addictive, this app turns every question into an opportunity for growth. With 
     adaptive difficulty levels, multimedia content, and social learning features, it transforms 
     the way people engage with information. Get ready to quiz, learn, and grow, all at the tap of a screen.`,
-    demoLink: "https://google.com/",
+    demoLink: "https://wakatime.com/@TechApostle",
     stack: [
       {
         name: "React Native",
