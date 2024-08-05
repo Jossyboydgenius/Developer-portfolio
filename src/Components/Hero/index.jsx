@@ -44,11 +44,12 @@ const Hero = () => {
       }
 
       if (!isDeleting && text === fullText) {
-        setTimeout(() => setIsDeleting(true), 500);
+        setTimeout(() => setIsDeleting(true), 1500); // Delay before starting to delete
       } else if (isDeleting && text === '') {
         setIsDeleting(false);
         setLoopNum(loopNum + 1);
         setTypingSpeed(500);
+        setTimeout(() => setStartTyping(true), 1500); // Delay before starting to type the next title
       }
     };
 
@@ -75,7 +76,7 @@ const Hero = () => {
   }, [viewportWidth, loopNum, titles]);
 
   useEffect(() => {
-    const delayTimer = setTimeout(() => setStartTyping(true), 1000); // Initial delay of 1000ms
+    const delayTimer = setTimeout(() => setStartTyping(true), 1500); // Initial delay of 1500ms
     return () => clearTimeout(delayTimer);
   }, []);
 
