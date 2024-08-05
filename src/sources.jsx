@@ -3,6 +3,11 @@ import client2 from "./assets/client-2.jpeg";
 import client3 from "./assets/client-3.jpeg";
 import client4 from "./assets/client-4.jpeg";
 import client5 from "./assets/client-5.jpeg";
+import blogWebsite from "./assets/blog-website.png";
+import animationPortfolio from "./assets/3D-animation-portfolio.png";
+import interactiveTerminal from "./assets/interactive-terminal-website.png";
+import terminalPortfolio from "./assets/terminal-portfolio-showcase.png";
+import dynamicTerminal from "./assets/dynamic-terminal-portfolio.png";
 import { FaChartBar, FaCloud, FaPhoneAlt, FaMapMarkerAlt, FaUserCheck, FaHeadset, FaSyncAlt, FaLaptopCode, FaDatabase, FaServer, FaInstagram, FaTwitter, FaGithub, FaPaintBrush, FaReact, FaNodeJs, FaFigma, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail, MdAnalytics } from "react-icons/md";
@@ -419,7 +424,7 @@ export const projects = [
   {
     id: 2,
     title: 'Blog website',
-    image: 'src/assets/blog-website.png',
+    image: blogWebsite,
     category: "Web",
     description: `Dive into the world of innovation with TechInsight Blog. Our platform offers in-depth articles on startups, cutting-edge technology, AI advancements, app development, and cybersecurity. Stay informed and ahead of the curve in the rapidly evolving tech landscape.`,
     demoLink: "https://github.com/Jossyboydgenius/Blog-website",
@@ -449,7 +454,7 @@ export const projects = [
   {
     id: 3,
     title: '3D Animation Portfolio',
-    image: 'src/assets/3D-animation-portfolio.png',
+    image: animationPortfolio,
     category: "Web",
     description: `Experience the future of web design with this immersive 3D animation portfolio. Showcasing cutting-edge techniques and creative prowess, this website pushes the boundaries of what's possible in web-based 3D animations.`,
     demoLink: "https://awejosepholaitan.vercel.app/",
@@ -484,7 +489,7 @@ export const projects = [
   {
     id: 4,
     title: 'Interactive Terminal Website',
-    image: 'src/assets/interactive-terminal-website.png',
+    image: interactiveTerminal,
     category: "Web",
     description: `Step into the world of command-line interfaces with this unique terminal-themed website. Navigate through content using familiar terminal commands, offering a nostalgic yet innovative user experience for tech enthusiasts.`,
     demoLink: "https://techapostleterminal.vercel.app/",
@@ -519,7 +524,7 @@ export const projects = [
   {
     id: 5,
     title: 'Terminal Portfolio Showcase',
-    image: 'src/assets/terminal-portfolio-showcase.png',
+    image: terminalPortfolio,
     category: "Web",
     description: `Discover a unique approach to personal branding with this terminal-themed portfolio website. Presenting professional accomplishments and skills through a command-line interface, it offers an engaging and memorable user experience for fellow developers and tech recruiters.`,
     demoLink: "https://aj-terminalportfolio.vercel.app/",
@@ -549,7 +554,7 @@ export const projects = [
   {
     id: 6,
     title: 'Dynamic Terminal Portfolio',
-    image: 'src/assets/dynamic-terminal-portfolio.png',
+    image: dynamicTerminal,
     category: "Web",
     description: `Experience a blend of nostalgia and innovation with this animated terminal-themed portfolio website. Featuring dynamic animations and interactive elements, this project showcases technical skills and creativity in a unique, engaging format.`,
     demoLink: "https://awejosephterminal.vercel.app/",
