@@ -82,7 +82,7 @@ const Hero = () => {
 
   const getClassNames = () => {
     let classNames = 'typing-text';
-    if (text === 'Cybersecurity Engineer') {
+    if (text === 'Cybersecurity Engineer.') {
       classNames += ' cybersecurity-engineer';
       if (viewportWidth <= 1150 && viewportWidth >= 1075) {
         classNames += ' cybersecurity-engineer-0_7em';
