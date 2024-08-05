@@ -7,14 +7,14 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Hero = () => {
-  const [text, setText] = useState('Software Engineer.');
+  const [text, setText] = useState('Software Engineer');
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(300);
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
   const [startTyping, setStartTyping] = useState(false); // New state for initial delay
 
-  const titles = ['Software Engineer.', 'Web Developer.', 'Cybersecurity Engineer.'];
+  const titles = ['Software Engineer', 'Web Developer', 'Cybersecurity Engineer'];
 
   useEffect(() => {
     AOS.init({
@@ -62,7 +62,7 @@ const Hero = () => {
   useEffect(() => {
     const i = loopNum % titles.length;
     const fullText = titles[i];
-    if (fullText === 'Cybersecurity Engineer.') {
+    if (fullText === 'Cybersecurity Engineer') {
       if (viewportWidth <= 1150 && viewportWidth >= 1075) {
         document.documentElement.style.setProperty('--typing-font-size', '0.7em');
       } else if (viewportWidth <= 1074 && viewportWidth >= 1051) {
