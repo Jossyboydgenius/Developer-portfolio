@@ -40,7 +40,7 @@ const Hero = () => {
         setTypingSpeed(10); // Faster deletion
       } else {
         setText(fullText.substring(0, text.length + 1));
-        setTypingSpeed(70); // Normal typing speed
+        setTypingSpeed(50); // Normal typing speed
       }
 
       if (!isDeleting && text === fullText) {
@@ -76,7 +76,7 @@ const Hero = () => {
   }, [viewportWidth, loopNum, titles]);
 
   useEffect(() => {
-    const delayTimer = setTimeout(() => setStartTyping(true), 1500); // Initial delay of 1500ms
+    const delayTimer = setTimeout(() => setStartTyping(true), 1200); // Initial delay of 1200ms
     return () => clearTimeout(delayTimer);
   }, []);
 
