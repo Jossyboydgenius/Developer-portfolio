@@ -12,6 +12,7 @@ const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(300);
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+  const [startTyping, setStartTyping] = useState(false); // New state for initial delay
 
   const titles = ['Software Engineer', 'Web Developer', 'Cybersecurity Engineer'];
 
@@ -51,25 +52,11 @@ const Hero = () => {
       }
     };
 
-    const timer = setTimeout(handleTyping, typingSpeed);
-    return () => clearTimeout(timer);
-  }, [text, isDeleting, loopNum, typingSpeed, titles]);
-
-  const getClassNames = () => {
-    let classNames = 'typing-text';
-    if (text === 'Cybersecurity Engineer') {
-      classNames += ' cybersecurity-engineer';
-      if (viewportWidth <= 1150 && viewportWidth >= 1075) {
-        classNames += ' cybersecurity-engineer-0_7em';
-      } else if (viewportWidth <= 1074 && viewportWidth >= 1051) {
-        classNames += ' cybersecurity-engineer-0_6em';
-      }
+    if (startTyping) {
+      const timer = setTimeout(handleTyping, typingSpeed);
+      return () => clearTimeout(timer);
     }
-    if (text !== 'Web Developer') {
-      classNames += ' smaller-text';
-    }
-    return classNames;
-  };
+  }, [text, isDeleting, loopNum, typingSpeed, titles, startTyping]);
 
   useEffect(() => {
     const i = loopNum % titles.length;
@@ -86,6 +73,27 @@ const Hero = () => {
       document.documentElement.style.setProperty('--typing-font-size', '0.8em');
     }
   }, [viewportWidth, loopNum, titles]);
+
+  useEffect(() => {
+    const delayTimer = setTimeout(() => setStartTyping(true), 1000); // Initial delay of 1000ms
+    return () => clearTimeout(delayTimer);
+  }, []);
+
+  const getClassNames = () => {
+    let classNames = 'typing-text';
+    if (text === 'Cybersecurity Engineer') {
+      classNames += ' cybersecurity-engineer';
+      if (viewportWidth <= 1150 && viewportWidth >= 1075) {
+        classNames += ' cybersecurity-engineer-0_7em';
+      } else if (viewportWidth <= 1074 && viewportWidth >= 1051) {
+        classNames += ' cybersecurity-engineer-0_6em';
+      }
+    }
+    if (text !== 'Web Developer') {
+      classNames += ' smaller-text';
+    }
+    return classNames;
+  };
 
   return (
     <section id='hero'>
