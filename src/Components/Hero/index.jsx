@@ -62,7 +62,7 @@ const Hero = () => {
   useEffect(() => {
     const i = loopNum % titles.length;
     const fullText = titles[i];
-    if (fullText === 'Cybersecurity Engineer') {
+    if (fullText === 'Cybersecurity Engineer.') {
       if (viewportWidth <= 1150 && viewportWidth >= 1075) {
         document.documentElement.style.setProperty('--typing-font-size', '0.7em');
       } else if (viewportWidth <= 1074 && viewportWidth >= 1051) {
