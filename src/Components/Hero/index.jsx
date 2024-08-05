@@ -7,14 +7,14 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Hero = () => {
-  const [text, setText] = useState('Software Engineer');
+  const [text, setText] = useState('Software Engineer.');
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(300);
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
   const [startTyping, setStartTyping] = useState(false); // New state for initial delay
 
-  const titles = ['Software Engineer', 'Web Developer', 'Cybersecurity Engineer'];
+  const titles = ['Software Engineer.', 'Web Developer.', 'Cybersecurity Engineer.'];
 
   useEffect(() => {
     AOS.init({
