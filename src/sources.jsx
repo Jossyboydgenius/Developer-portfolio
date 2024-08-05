@@ -7,7 +7,7 @@ import { FaChartBar, FaCloud, FaPhoneAlt, FaMapMarkerAlt, FaUserCheck, FaHeadset
 import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail, MdAnalytics } from "react-icons/md";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiExpress, SiMongodb, SiSwift, SiKotlin, SiPostman, SiXcode, SiFlutter, SiAdobexd } from "react-icons/si";
+import { SiExpress, SiMongodb, SiSwift, SiKotlin, SiPostman, SiXcode, SiFlutter, SiAdobexd, SiCss3, SiJavascript, SiTypescript, SiTailwindcss, SiNextdotjs, SiHtml5, SiSvelte, SiPrismic, SiPowershell } from "react-icons/si";
 import { TbBrandReactNative, TbDeviceMobileCode } from "react-icons/tb";
 import { AiFillAndroid } from "react-icons/ai";
 import { BsRobot } from "react-icons/bs";
@@ -383,8 +383,196 @@ export const skills = [
 ]
 
 export const projects = [
-  { 
+  {
     id: 1,
+    title: 'E-Commerce Website',
+    image: 'https://cdn.dribbble.com/userupload/8002230/file/original-c8eec16edea4d5c836b2bfabe7fbaa5a.jpg',
+    category: "Web",
+    description: `Elevate your online shopping experience with our state of the art E-Commerce Application. 
+    Seamlessly blending aesthetics with functionality, our platform offers more than just transactions, it creates 
+    shopping experiences. From AI powered product recommendations to one click checkouts, every feature is 
+    designed to delight your customers and boost your conversions. Welcome to the future of online retail.`,
+    demoLink: "https://github.com/Jossyboydgenius/E-shop.git",
+    stack: [
+      {
+        name: "ReactJs",
+        icon: <FaReact/>,
+        iconColor: "skyblue",
+      },
+      {
+        name: "CSS",
+        icon: <SiCss3/>,
+        iconColor: "lightblue",
+      },
+      {
+        name: "NodeJs",
+        icon: <FaNodeJs/>,
+        iconColor: "green",
+      },
+      {
+        name: "MongoDB",
+        icon: <SiMongodb/>,
+        iconColor: "limegreen",
+      },
+    ]
+  },
+  {
+    id: 2,
+    title: 'Blog website',
+    image: 'src/assets/blog-website.png',
+    category: "Web",
+    description: `Dive into the world of innovation with TechInsight Blog. Our platform offers in-depth articles on startups, cutting-edge technology, AI advancements, app development, and cybersecurity. Stay informed and ahead of the curve in the rapidly evolving tech landscape.`,
+    demoLink: "https://github.com/Jossyboydgenius/Blog-website",
+    stack: [
+      {
+        name: "React",
+        icon: <FaReact/>,
+        iconColor: "skyblue",
+      },
+      {
+        name: "Tailwind CSS",
+        icon: <SiTailwindcss/>,
+        iconColor: "lightblue",
+      },
+      {
+        name: "NodeJs",
+        icon: <FaNodeJs/>,
+        iconColor: "green",
+      },
+      {
+        name: "MySQL",
+        icon: <SiCss3/>,
+        iconColor: "orange",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: '3D Animation Portfolio',
+    image: 'src/assets/3D-animation-portfolio.png',
+    category: "Web",
+    description: `Experience the future of web design with this immersive 3D animation portfolio. Showcasing cutting-edge techniques and creative prowess, this website pushes the boundaries of what's possible in web-based 3D animations.`,
+    demoLink: "https://awejosepholaitan.vercel.app/",
+    stack: [
+      {
+        name: "TypeScript",
+        icon: <SiTypescript/>,
+        iconColor: "blue",
+      },
+      {
+        name: "JavaScript",
+        icon: <SiJavascript/>,
+        iconColor: "yellow",
+      },
+      {
+        name: "Tailwind",
+        icon: <SiTailwindcss/>,
+        iconColor: "lightblue",
+      },
+      {
+        name: "Next.js",
+        icon: <SiNextdotjs/>,
+        iconColor: "black",
+      },
+      {
+        name: "Prismic",
+        icon: <SiPrismic/>,
+        iconColor: "purple",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: 'Interactive Terminal Website',
+    image: 'src/assets/interactive-terminal-website.png',
+    category: "Web",
+    description: `Step into the world of command-line interfaces with this unique terminal-themed website. Navigate through content using familiar terminal commands, offering a nostalgic yet innovative user experience for tech enthusiasts.`,
+    demoLink: "https://techapostleterminal.vercel.app/",
+    stack: [
+      {
+        name: "TypeScript",
+        icon: <SiTypescript/>,
+        iconColor: "blue",
+      },
+      {
+        name: "JavaScript",
+        icon: <SiJavascript/>,
+        iconColor: "yellow",
+      },
+      {
+        name: "CSS",
+        icon: <SiCss3/>,
+        iconColor: "lightblue",
+      },
+      {
+        name: "HTML",
+        icon: <SiHtml5/>,
+        iconColor: "orange",
+      },
+      {
+        name: "Svelte",
+        icon: <SiSvelte/>,
+        iconColor: "red",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: 'Terminal Portfolio Showcase',
+    image: 'src/assets/terminal-portfolio-showcase.png',
+    category: "Web",
+    description: `Discover a unique approach to personal branding with this terminal-themed portfolio website. Presenting professional accomplishments and skills through a command-line interface, it offers an engaging and memorable user experience for fellow developers and tech recruiters.`,
+    demoLink: "https://aj-terminalportfolio.vercel.app/",
+    stack: [
+      {
+        name: "TypeScript",
+        icon: <SiTypescript/>,
+        iconColor: "blue",
+      },
+      {
+        name: "JavaScript",
+        icon: <SiJavascript/>,
+        iconColor: "yellow",
+      },
+      {
+        name: "CSS",
+        icon: <SiCss3/>,
+        iconColor: "lightblue",
+      },
+      {
+        name: "Shell",
+        icon: <SiPowershell/>,
+        iconColor: "black",
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: 'Dynamic Terminal Portfolio',
+    image: 'src/assets/dynamic-terminal-portfolio.png',
+    category: "Web",
+    description: `Experience a blend of nostalgia and innovation with this animated terminal-themed portfolio website. Featuring dynamic animations and interactive elements, this project showcases technical skills and creativity in a unique, engaging format.`,
+    demoLink: "https://awejosephterminal.vercel.app/",
+    stack: [
+      {
+        name: "JavaScript",
+        icon: <SiJavascript/>,
+        iconColor: "yellow",
+      },
+      {
+        name: "CSS",
+        icon: <SiCss3/>,
+        iconColor: "blue",
+      },
+      {
+        name: "HTML",
+        icon: <SiHtml5/>,
+        iconColor: "orange",
+      },
+    ],
+  },
+  { 
+    id: 7,
     title: 'AI Powered School',
     image: 'https://cdn.dribbble.com/userupload/10064191/file/original-091c06a630285b93a5f81e29e882fe3c.png',
     category: "UI/UX",
@@ -402,39 +590,7 @@ export const projects = [
     ]
   },
   {
-    id: 2,
-    title: 'E-Commerce Application',
-    image: 'https://cdn.dribbble.com/userupload/8002230/file/original-c8eec16edea4d5c836b2bfabe7fbaa5a.jpg',
-    category: "Web",
-    description: `Elevate your online shopping experience with our state of the art E-Commerce Application. 
-    Seamlessly blending aesthetics with functionality, our platform offers more than just transactions, it creates 
-    shopping experiences. From AI powered product recommendations to one click checkouts, every feature is 
-    designed to delight your customers and boost your conversions. Welcome to the future of online retail.`,
-    demoLink: "https://github.com/Jossyboydgenius/E-shop.git",
-    stack: [
-      {
-        name: "ReactJs",
-        icon: <FaReact/>,
-        iconColor: "skyblue",
-      },
-      {
-        name: "NodeJs",
-        icon: <FaNodeJs/>,
-        iconColor: "green",
-      },
-      {
-        name: "ExpressJs",
-        icon: <SiExpress/>,
-      },
-      {
-        name: "MongoDB",
-        icon: <SiMongodb/>,
-        iconColor: "limegreen",
-      },
-    ]
-  },
-  {
-    id: 3,
+    id: 8,
     title: 'Robotic Engineering Web Application',
     image: 'https://s3-alpha.figma.com/hub/file/5101537097/c4a1ed2c-4ab9-43fb-a248-d7ac6b0c3161-cover.png',
     category: "Web",
@@ -466,7 +622,7 @@ export const projects = [
     ]
   },
   {
-    id: 4,
+    id: 9,
     title: 'Project Management application',
     image: 'https://miro.medium.com/v2/resize:fit:1400/1*6iO0wm8q4cByvxY6kB9WiQ.png',
     category: "Apps",
@@ -499,7 +655,7 @@ export const projects = [
     ]
   },
   {
-    id: 5,
+    id: 10,
     title: 'Mobile bank - App Design',
     image: 'https://i.pinimg.com/originals/a0/be/c3/a0bec3706210e6ab28470eee95bf5889.png',
     category: "UI/UX",
@@ -517,7 +673,7 @@ export const projects = [
     ]
   },
   {
-    id: 6,
+    id: 11,
     title: 'Quiz App Development',
     image: 'https://i.pinimg.com/originals/b3/35/02/b33502e465346ace2a7f1df203d851a3.jpg',
     category: "Apps",
