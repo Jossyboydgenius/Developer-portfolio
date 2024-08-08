@@ -7,14 +7,14 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Hero = () => {
-  const [text, setText] = useState('Software Engineer');
+  const [text, setText] = useState('Software Engineer.');
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(300);
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
   const [startTyping, setStartTyping] = useState(false); // New state for initial delay
 
-  const titles = ['Software Engineer', 'Web Developer', 'Cybersecurity Engineer'];
+  const titles = ['Software Engineer.', 'Web Developer.', 'Cybersecurity Engineer.'];
 
   useEffect(() => {
     AOS.init({
@@ -60,41 +60,38 @@ const Hero = () => {
   }, [text, isDeleting, loopNum, typingSpeed, titles, startTyping]);
 
   useEffect(() => {
-    const i = loopNum % titles.length;
-    const fullText = titles[i];
-    if (fullText === 'Cybersecurity Engineer') {
-      if (viewportWidth <= 1150 && viewportWidth >= 1075) {
-        document.documentElement.style.setProperty('--typing-font-size', '0.7em');
-      } else if (viewportWidth <= 1074 && viewportWidth >= 1051) {
-        document.documentElement.style.setProperty('--typing-font-size', '0.6em');
+      const i = loopNum % titles.length;
+      const fullText = titles[i];
+      if (fullText === 'Cybersecurity Engineer.') {
+        if (viewportWidth > 1150) {
+          document.documentElement.style.setProperty('--typing-font-size', '0.7em');
+        } else if (viewportWidth <= 1150 && viewportWidth >= 1075) {
+          document.documentElement.style.setProperty('--typing-font-size', '0.7em');
+        } else if (viewportWidth <= 1074 && viewportWidth >= 1051) {
+          document.documentElement.style.setProperty('--typing-font-size', '0.6em');
+        } else {
+          document.documentElement.style.setProperty('--typing-font-size', '0.8em');
+        }
       } else {
         document.documentElement.style.setProperty('--typing-font-size', '0.8em');
       }
-    } else {
-      document.documentElement.style.setProperty('--typing-font-size', '0.8em');
-    }
-  }, [viewportWidth, loopNum, titles]);
+    }, [viewportWidth, loopNum, titles]);
 
   useEffect(() => {
     const delayTimer = setTimeout(() => setStartTyping(true), 1200); // Initial delay of 1200ms
     return () => clearTimeout(delayTimer);
   }, []);
 
-  const getClassNames = () => {
-    let classNames = 'typing-text';
-    if (text === 'Cybersecurity Engineer.') {
-      classNames += ' cybersecurity-engineer';
-      if (viewportWidth <= 1150 && viewportWidth >= 1075) {
-        classNames += ' cybersecurity-engineer-0_7em';
-      } else if (viewportWidth <= 1074 && viewportWidth >= 1051) {
-        classNames += ' cybersecurity-engineer-0_6em';
-      }
-    }
-    if (text !== 'Web Developer') {
-      classNames += ' smaller-text';
-    }
-    return classNames;
-  };
+const getClassNames = () => {
+  let classNames = 'typing-text';
+  if (text === 'Cybersecurity Engineer.') {
+    classNames += ' cybersecurity-engineer';
+  }
+  if (text !== 'Web Developer.') {
+    classNames += ' smaller-text';
+  }
+  return classNames;
+};
 
   return (
     <section id='hero'>
