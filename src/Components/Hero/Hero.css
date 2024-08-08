@@ -1,12 +1,12 @@
 #hero {
     overflow: hidden;
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 #hero .info-container {
     display: grid;
-    grid-template-columns: 1fr 500px;
+    grid-template-columns: auto 500px;
     gap: 20px;
     min-height: 100vh;
     align-items: center;
@@ -38,6 +38,30 @@
 
 #hero .achievement-cluster .wrapper {
     padding: 10px 20px;
+}
+
+
+#hero .hero-image::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to bottom, transparent, var(--bg-primary)); /* To add blur below the image */
+}
+
+#hero .hero-image {
+    position: relative;
+    width: 100%; /* Adjust this value to make the image larger */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 600px; /* Set a maximum width if needed */
+    margin: 0 auto; /* Center the image */
+}
+
+#hero .hero-image img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .typing-container {
@@ -122,5 +146,11 @@
 
     #hero .wrapper .buttons-wrapper {
         margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1050px) {
+    #hero .achievement-cluster {
+        bottom: 50px; /* Adjust this value as needed to move the cluster up */
     }
 }
