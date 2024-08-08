@@ -40,7 +40,6 @@
     padding: 10px 20px;
 }
 
-
 #hero .hero-image::before {
     content: "";
     position: absolute;
@@ -98,20 +97,10 @@
     -webkit-text-fill-color: transparent;
 }
 
-/* Specific font size changes for Cybersecurity Engineer */
-.cybersecurity-engineer-0_7em {
-    font-size: 0.7em;
-}
-
-.cybersecurity-engineer-0_6em {
-    font-size: 0.6em;
-}
-
 /* General smaller text class for titles except Web Developer */
 .smaller-text {
     font-size: 1em; /* Default smaller font size for other titles */
 }
-
 
 /* Responsive code */
 @media (max-width: 1050px) {
@@ -152,3 +141,18 @@
         margin-bottom: 30px;
     }
 }
+
+@media (min-width: 1151px) {
+    .typing-text.cybersecurity-engineer {
+        font-size: 0.7em !important;
+    }
+}
+
+/* New media query for viewports wider than 1050px */
+/* @media (min-width: 1051px) {
+    #hero .hero-image {
+        margin-left: 10px;  */
+        /* Adjust this value as needed to move the image to the left */
+    /* }
+} */
+ 
