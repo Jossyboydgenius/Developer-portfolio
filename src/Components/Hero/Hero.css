@@ -115,6 +115,10 @@
 
 /* Responsive code */
 @media (max-width: 1050px) {
+    #hero .achievement-cluster {
+        bottom: 50px; /* Adjust this value as needed to move the cluster up */
+    }
+    
     #hero .info-container * {
         text-align: center;
     }
@@ -146,11 +150,5 @@
 
     #hero .wrapper .buttons-wrapper {
         margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 1050px) {
-    #hero .achievement-cluster {
-        bottom: 50px; /* Adjust this value as needed to move the cluster up */
     }
 }
