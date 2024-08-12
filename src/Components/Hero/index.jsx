@@ -108,7 +108,7 @@ const getClassNames = () => {
             <span className="cursor"></span>
           </h1>
           <p className="muted" data-aos='fade-up' data-aos-delay='300'>
-            Innovative problem solver with a passion for creating secure, scalable solutions. 
+            Innovative problem solver with a passion for creating secure & scalable solutions. 
             Leveraging cutting edge technologies to craft intuitive user experiences and robust backend systems. 
             Let's build the future of tech together!
           </p>
