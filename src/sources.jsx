@@ -8,6 +8,8 @@ import animationPortfolio from "./assets/3D-animation-portfolio.png";
 import interactiveTerminal from "./assets/interactive-terminal-website.png";
 import terminalPortfolio from "./assets/terminal-portfolio-showcase.png";
 import dynamicTerminal from "./assets/dynamic-terminal-portfolio.png";
+import globalRelocate from "./assets/global-relocate.png";
+import seamless from "./assets/seamless.png";
 import { FaChartBar, FaCloud, FaPhoneAlt, FaMapMarkerAlt, FaUserCheck, FaHeadset, FaSyncAlt, FaLaptopCode, FaDatabase, FaServer, FaInstagram, FaGithub, FaPaintBrush, FaReact, FaNodeJs, FaFigma, FaLinkedin } from "react-icons/fa";
 import { SiWakatime } from "react-icons/si";
 import { MdEmail, MdAnalytics } from "react-icons/md";
@@ -394,14 +396,72 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    title: 'E-Commerce Website',
-    image: 'https://cdn.dribbble.com/userupload/8002230/file/original-c8eec16edea4d5c836b2bfabe7fbaa5a.jpg',
+    title: 'Zenode - Web3 Developer Platform',
+    image: 'https://github.com/Jossyboydgenius/Zenode/blob/main/public/active-challenges.png?raw=true',
     category: "Web",
-    description: `Elevate your online shopping experience with our state of the art E-Commerce Application. 
-    Seamlessly blending aesthetics with functionality, our platform offers more than just transactions, it creates 
-    shopping experiences. From AI powered product recommendations to one click checkouts, every feature is 
-    designed to delight your customers and boost your conversions. Welcome to the future of online retail.`,
-    demoLink: "https://github.com/Jossyboydgenius/E-shop.git",
+    description: `Level up your coding journey with Zenode - where Web3 contributions become fun and rewarding. 
+    Our gamified platform transforms open-source development into an exciting adventure with XP points, 
+    daily streaks, and loot boxes. Join 10,000+ active developers, contribute to 50,000+ pull requests, 
+    and earn onchain credentials while mastering Solidity and Rust. Track your progress, compete on 
+    global leaderboards, and land your dream Web3 job 4x faster.`,
+    demoLink: "https://zenode.netlify.app/",
+    stack: [
+      {
+        name: "Next.js",
+        icon: <SiNextdotjs/>,
+        iconColor: "black",
+      },
+      {
+        name: "TypeScript",
+        icon: <SiTypescript/>,
+        iconColor: "blue",
+      },
+      {
+        name: "Tailwind",
+        icon: <SiTailwindcss/>,
+        iconColor: "lightblue",
+      },
+    ]
+  },
+  {
+    id: 2,
+    title: 'Fizzi - 3D E-commerce',
+    image: 'https://github.com/user-attachments/assets/d8285ccb-737f-4f49-b85a-b3c32c111166',
+    category: "Web",
+    description: `Experience the future of beverage shopping with Fizzi's immersive 3D e-commerce platform. 
+    Discover gut-friendly sodas perfected with real fruit juice, prebiotics, and probiotics. Featuring 
+    stunning 3D product visualization powered by GSAP animations, explore five delicious flavors with just 
+    3-5g sugar and 9g fiber. Our innovative interface makes shopping for healthier alternatives an engaging 
+    and interactive experience.`,
+    demoLink: "https://fizzii.vercel.app/",
+    stack: [
+      {
+        name: "Next.js",
+        icon: <SiNextdotjs/>,
+        iconColor: "black",
+      },
+      {
+        name: "GSAP",
+        icon: <SiJavascript/>,
+        iconColor: "green",
+      },
+      {
+        name: "TypeScript",
+        icon: <SiTypescript/>,
+        iconColor: "blue",
+      },
+    ]
+  },
+  {
+    id: 3,
+    title: 'Seamless Project Management',
+    image: seamless,
+    category: "Web",
+    description: `Take control of your projects with Seamless - the ultimate project management solution. 
+    From real-time communication to financial transparency, we've revolutionized project oversight. 
+    Features include centralized management, seamless communication, and comprehensive financial tracking. 
+    Dream it, build it, and make it happen effortlessly with Seamless.`,
+    demoLink: "https://buildwithseamless.co/",
     stack: [
       {
         name: "ReactJs",
@@ -409,24 +469,41 @@ export const projects = [
         iconColor: "skyblue",
       },
       {
-        name: "CSS",
-        icon: <SiCss3/>,
-        iconColor: "lightblue",
-      },
-      {
-        name: "NodeJs",
-        icon: <FaNodeJs/>,
-        iconColor: "green",
-      },
-      {
-        name: "MongoDB",
-        icon: <SiMongodb/>,
-        iconColor: "limegreen",
+        name: "Figma",
+        icon: <FaFigma/>,
+        iconColor: "orangered",
       },
     ]
   },
   {
-    id: 2,
+    id: 4,
+    title: 'Global Relocate',
+    image: globalRelocate,
+    category: "Web",
+    description: `Your AI-powered platform for seamless relocation, legal guidance, and global living. 
+    Compare countries side by side, analyzing key factors like cost of living, tax rates, and quality of life. 
+    Leverage smart AI-powered insights and connect with like-minded global nomads through forums and groups. 
+    Making international relocation decisions has never been easier.`,
+    demoLink: "https://globalrelocatetest.netlify.app/",
+    stack: [
+      {
+        name: "Vite",
+        icon: <SiJavascript/>,
+        iconColor: "yellow",
+      },
+      {
+        name: "Figma",
+        icon: <FaFigma/>,
+        iconColor: "orangered",
+      },
+      {
+        name: "ExpressJs",
+        icon: <SiExpress/>,
+      },
+    ]
+  },
+  {
+    id: 5,
     title: 'Blog website',
     image: blogWebsite,
     category: "Web",
@@ -456,7 +533,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 6,
     title: '3D Animation Portfolio',
     image: animationPortfolio,
     category: "Web",
@@ -491,7 +568,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 7,
     title: 'Interactive Terminal Website',
     image: interactiveTerminal,
     category: "Web",
@@ -526,7 +603,7 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 8,
     title: 'Terminal Portfolio Showcase',
     image: terminalPortfolio,
     category: "Web",
@@ -556,7 +633,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 9,
     title: 'Dynamic Terminal Portfolio',
     image: dynamicTerminal,
     category: "Web",
@@ -581,7 +658,7 @@ export const projects = [
     ],
   },
   { 
-    id: 7,
+    id: 10,
     title: 'AI Powered School',
     image: 'https://cdn.dribbble.com/userupload/10064191/file/original-091c06a630285b93a5f81e29e882fe3c.png',
     category: "UI/UX",
@@ -599,7 +676,7 @@ export const projects = [
     ]
   },
   {
-    id: 8,
+    id: 11,
     title: 'Robotic Engineering Web Application',
     image: 'https://s3-alpha.figma.com/hub/file/5101537097/c4a1ed2c-4ab9-43fb-a248-d7ac6b0c3161-cover.png',
     category: "Web",
@@ -631,7 +708,7 @@ export const projects = [
     ]
   },
   {
-    id: 9,
+    id: 12,
     title: 'Project Management application',
     image: 'https://miro.medium.com/v2/resize:fit:1400/1*6iO0wm8q4cByvxY6kB9WiQ.png',
     category: "Apps",
@@ -664,7 +741,7 @@ export const projects = [
     ]
   },
   {
-    id: 10,
+    id: 13,
     title: 'Mobile bank - App Design',
     image: 'https://i.pinimg.com/originals/a0/be/c3/a0bec3706210e6ab28470eee95bf5889.png',
     category: "UI/UX",
@@ -682,7 +759,7 @@ export const projects = [
     ]
   },
   {
-    id: 11,
+    id: 14,
     title: 'Quiz App Development',
     image: 'https://i.pinimg.com/originals/b3/35/02/b33502e465346ace2a7f1df203d851a3.jpg',
     category: "Apps",
