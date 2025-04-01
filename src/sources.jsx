@@ -8,8 +8,8 @@ import animationPortfolio from "./assets/3D-animation-portfolio.png";
 import interactiveTerminal from "./assets/interactive-terminal-website.png";
 import terminalPortfolio from "./assets/terminal-portfolio-showcase.png";
 import dynamicTerminal from "./assets/dynamic-terminal-portfolio.png";
-import { FaChartBar, FaCloud, FaPhoneAlt, FaMapMarkerAlt, FaUserCheck, FaHeadset, FaSyncAlt, FaLaptopCode, FaDatabase, FaServer, FaInstagram, FaTwitter, FaGithub, FaPaintBrush, FaReact, FaNodeJs, FaFigma, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaChartBar, FaCloud, FaPhoneAlt, FaMapMarkerAlt, FaUserCheck, FaHeadset, FaSyncAlt, FaLaptopCode, FaDatabase, FaServer, FaInstagram, FaGithub, FaPaintBrush, FaReact, FaNodeJs, FaFigma, FaLinkedin } from "react-icons/fa";
+import { SiWakatime } from "react-icons/si";
 import { MdEmail, MdAnalytics } from "react-icons/md";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiExpress, SiMongodb, SiSwift, SiKotlin, SiPostman, SiXcode, SiFlutter, SiAdobexd, SiCss3, SiJavascript, SiTypescript, SiTailwindcss, SiNextdotjs, SiHtml5, SiSvelte, SiPrismic, SiPowershell } from "react-icons/si";
@@ -149,11 +149,11 @@ export const skills = [
       },
       {
         skill: "iOS (Swift)",
-        level: "Intermediate",
+        level: "Experienced",
       },
       {
         skill: "Android (Kotlin)",
-        level: "Intermediate",
+        level: "Experienced",
       },
       {
         skill: "Xcode",
@@ -330,7 +330,11 @@ export const skills = [
         level: "Intermediate",
       },
       {
-        skill: "Swagger/OpenAPI",
+        skill: "Swagger",
+        level: "Experienced",
+      },
+      {
+        skill: "OpenAPI",
         level: "Intermediate",
       },
       {
@@ -381,7 +385,7 @@ export const skills = [
       },
       {
         skill: "Progressive Web Apps",
-        level: "Intermediate",
+        level: "Experienced",
       },
     ]
   },
@@ -789,9 +793,9 @@ export const socialHandles = [
       link:"https://instagram.com/tech_apostle/",
     },
     {
-      name:"Twitter",
-      icon:<FaXTwitter/>,
-      link:"https://twitter.com/@kiss_johzzy",
+      name:"Wakatime",
+      icon:<SiWakatime/>,
+      link:"https://wakatime.com/@TechApostle",
     },
     {
       name:"Github",
