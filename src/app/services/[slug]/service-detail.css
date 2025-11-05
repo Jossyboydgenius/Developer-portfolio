@@ -1,0 +1,279 @@
+.service-detail-page {
+  min-height: 100vh;
+  padding: 100px 0 60px;
+  background: var(--bg-primary);
+}
+
+.service-detail-page .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary);
+  font-size: 16px;
+  margin-bottom: 40px;
+  transition: var(--transition);
+}
+
+.back-link:hover {
+  color: var(--foreground);
+  transform: translateX(-5px);
+}
+
+.service-hero {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.icon-wrapper-large {
+  font-size: 100px;
+  color: var(--primary);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-hero .heading-1 {
+  font-size: 70px;
+  margin: 0;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.service-content section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.service-content h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.overview .description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--muted-foreground);
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.feature-card {
+  background: var(--bg-accent);
+  border: 1px solid var(--border-primary);
+  border-radius: 16px;
+  padding: 30px;
+  transition: var(--transition);
+  text-align: center;
+}
+
+.feature-card:hover {
+  background: var(--bg-secondary);
+  transform: translateY(-5px);
+  border-color: var(--primary);
+}
+
+.feature-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--foreground);
+}
+
+.feature-card p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--foreground);
+  padding: 15px;
+  background: var(--bg-accent);
+  border-radius: 12px;
+  border: 1px solid var(--border-primary);
+  transition: var(--transition);
+}
+
+.benefits-list li:hover {
+  background: var(--bg-secondary);
+  border-color: var(--primary);
+}
+
+.check-icon {
+  color: var(--primary);
+  font-size: 24px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 60px 40px;
+  background: var(--bg-secondary);
+  border-radius: 20px;
+  border: 1px solid var(--border-primary);
+}
+
+.cta-section h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: var(--foreground);
+}
+
+.cta-section p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.not-found {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.not-found h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: var(--foreground);
+}
+
+.not-found p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: var(--muted-foreground);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .service-hero .heading-1 {
+    font-size: 50px;
+  }
+
+  .icon-wrapper-large {
+    font-size: 80px;
+  }
+
+  .service-content h2 {
+    font-size: 35px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .service-detail-page {
+    padding: 80px 0 40px;
+  }
+
+  .service-hero .heading-1 {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+
+  .icon-wrapper-large {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+
+  .service-content {
+    gap: 50px;
+  }
+
+  .service-content h2 {
+    font-size: 28px;
+  }
+
+  .overview .description {
+    font-size: 16px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    padding: 20px;
+  }
+
+  .benefits-list li {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .cta-section {
+    padding: 40px 20px;
+  }
+
+  .cta-section h2 {
+    font-size: 30px;
+  }
+
+  .cta-section p {
+    font-size: 16px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+  }
+}

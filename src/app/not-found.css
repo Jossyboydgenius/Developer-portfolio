@@ -1,0 +1,146 @@
+.not-found-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: var(--bg-primary);
+}
+
+.not-found-content {
+  max-width: 600px;
+  text-align: center;
+  width: 100%;
+}
+
+.error-code h1 {
+  font-size: 150px;
+  font-weight: 900;
+  margin: 0;
+  line-height: 1;
+  font-family: "Outfit", sans-serif;
+}
+
+.error-illustration {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  animation: float 3s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+}
+
+.error-message {
+  margin: 30px 0;
+}
+
+.error-message h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--text-primary);
+  font-family: "Outfit", sans-serif;
+}
+
+.error-message p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.error-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.error-actions .btn {
+  min-width: 150px;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.error-illustration circle {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.error-illustration circle:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.error-illustration circle:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.error-illustration circle:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .error-code h1 {
+    font-size: 100px;
+  }
+
+  .error-message h2 {
+    font-size: 28px;
+  }
+
+  .error-message p {
+    font-size: 16px;
+  }
+
+  .error-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .error-actions .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .error-illustration svg {
+    width: 200px;
+    height: 133px;
+  }
+}
+
+@media (max-width: 480px) {
+  .error-code h1 {
+    font-size: 80px;
+  }
+
+  .error-message h2 {
+    font-size: 24px;
+  }
+
+  .error-message p {
+    font-size: 14px;
+  }
+
+  .error-illustration svg {
+    width: 150px;
+    height: 100px;
+  }
+}

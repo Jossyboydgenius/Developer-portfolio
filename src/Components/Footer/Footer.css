@@ -12,6 +12,12 @@
     margin-top: 30px;
 }
 
+#footer .title{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
 #footer .route{
     display: block;
     margin: 10px 0;

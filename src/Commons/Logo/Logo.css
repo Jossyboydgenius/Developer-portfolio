@@ -1,10 +1,15 @@
 .logo{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 .logo .icon{
-    font-size: 40px;
-    color: var(--primary-accent);
+    font-size: 28px;
+    color: var(--primary);
+}
+
+.logo h1{
+    font-size: 24px;
+    font-weight: 600;
 }

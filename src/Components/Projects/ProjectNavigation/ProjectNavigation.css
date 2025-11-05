@@ -1,50 +1,61 @@
-.project-navigation{
-    position: relative;
-    width: 100%;
-    max-width: max-content;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 40px;
-    user-select: none;
+.project-navigation {
+  position: relative;
+  width: 100%;
+  max-width: max-content;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 40px;
+  user-select: none;
 }
 
-.project-navigation button{
-    position: relative;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--foreground);
-    text-decoration: none;
-    padding: 0 23px;
-    z-index: 1;
-    cursor: pointer;
-    background: transparent;
+.project-navigation button {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--foreground);
+  text-decoration: none;
+  padding: 0 23px;
+  z-index: 1;
+  cursor: pointer;
+  background: transparent;
+  transition: var(--transition);
 }
 
-.project-navigation .indicator{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    height: 100%;
-    border-radius: 10px;
-    transition: var(--transition);
-    cursor: pointer;
-    background: var(--gradient-3);
+.project-navigation button:hover:not(.active) {
+  color: var(--primary);
+  transform: scale(1.05);
+}
+
+.project-navigation .indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 100%;
+  border-radius: 10px;
+  transition: var(--transition);
+  cursor: pointer;
+  background: var(--gradient-3);
+}
+
+.project-navigation .indicator:hover {
+  background: linear-gradient(190deg, #3a9128 0%, rgba(15, 60, 58, 0.7) 100%);
+  box-shadow: 0 2px 8px rgba(82, 194, 52, 0.3);
 }
 
 /* Reponsive code */
-@media (max-width: 700px){
-    .project-navigation button{
-        font-size: 12px;
-    }
+@media (max-width: 700px) {
+  .project-navigation button {
+    font-size: 12px;
+  }
 }
 
-@media (max-width: 400px){
-    .project-navigation button{
-        font-size: 10px;
-    }
+@media (max-width: 400px) {
+  .project-navigation button {
+    font-size: 10px;
+  }
 }

@@ -1,158 +1,168 @@
 #hero {
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 30px;
 }
 
 #hero .info-container {
-    display: grid;
-    grid-template-columns: auto 500px;
-    gap: 20px;
-    min-height: 100vh;
-    align-items: center;
+  display: grid;
+  grid-template-columns: auto 500px;
+  gap: 20px;
+  min-height: 100vh;
+  align-items: center;
 }
 
 #hero .info-container .column:nth-child(1) {
-    padding-top: 70px;
+  padding-top: 70px;
 }
 
 #hero .heading-1,
 #hero .sub-title {
-    text-align: left;
+  text-align: left;
 }
 
 #hero .wrapper .buttons-wrapper {
-    justify-content: flex-start;
-    margin-top: 40px;
-    margin-bottom: 100px;
+  justify-content: flex-start;
+  margin-top: 40px;
+  margin-bottom: 100px;
 }
 
 #hero .achievement-cluster {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    -webkit-backdrop-filter: blur(100px);
-    backdrop-filter: blur(100px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
 }
 
 #hero .achievement-cluster .wrapper {
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 #hero .hero-image::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 20%;
-    background: linear-gradient(to bottom, transparent, var(--bg-primary)); /* To add blur below the image */
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--bg-primary)
+  ); /* To add blur below the image */
 }
 
 #hero .hero-image {
-    position: relative;
-    width: 100%; /* Adjust this value to make the image larger */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 600px; /* Set a maximum width if needed */
-    margin: 0 auto; /* Center the image */
+  position: relative;
+  width: 100%; /* Adjust this value to make the image larger */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 600px; /* Set a maximum width if needed */
+  margin: 0 auto; /* Center the image */
 }
 
 #hero .hero-image img {
-    width: 100%; /* Ensure the image takes up the full width of its container */
-    height: auto; /* Maintain aspect ratio */
+  width: 100%; /* Ensure the image takes up the full width of its container */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .typing-container {
-    display: flex;
-    align-items: center;
-    height: 1.2em; /* Set a fixed height to prevent layout shifts */
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 1.2em; /* Set a fixed height to prevent layout shifts */
+  overflow: hidden;
 }
 
 .typing-text {
-    display: inline-block;
-    font-size: 0.8em; /* Reduce font size for longer titles */
-    white-space: nowrap;
+  display: inline-block;
+  font-size: 0.8em; /* Reduce font size for longer titles */
+  white-space: nowrap;
 }
 
 .cursor {
-    display: inline-block;
-    width: 3px;
-    height: 1em;
-    background-color: #4CAF50;
-    margin-left: 5px;
-    animation: blink 0.7s infinite;
+  display: inline-block;
+  width: 3px;
+  height: 1em;
+  background-color: #4caf50;
+  margin-left: 5px;
+  animation: blink 0.7s infinite;
 }
 
 @keyframes blink {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .gradient-text {
-    background: linear-gradient(45deg, #4CAF50, #2196F3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #52c234 0%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* General smaller text class for titles except Web Developer */
 .smaller-text {
-    font-size: 1em; /* Default smaller font size for other titles */
+  font-size: 1em; /* Default smaller font size for other titles */
 }
 
 /* Responsive code */
 @media (max-width: 1050px) {
-    #hero .achievement-cluster {
-        bottom: 50px; /* Adjust this value as needed to move the cluster up */
-    }
-    
-    #hero .info-container * {
-        text-align: center;
-    }
+  #hero .achievement-cluster {
+    bottom: 50px; /* Adjust this value as needed to move the cluster up */
+  }
 
-    #hero .info-container {
-        grid-template-columns: 1fr;
-    }
+  #hero .info-container * {
+    text-align: center;
+  }
 
-    #hero .info-container .buttons-wrapper {
-        justify-content: center;
-    }
+  #hero .info-container {
+    grid-template-columns: 1fr;
+  }
 
-    #hero .heading-1,
-    #hero .sub-title,
-    #hero .typing-container {
-        justify-content: center;
-    }
+  #hero .info-container .buttons-wrapper {
+    justify-content: center;
+  }
 
-    .typing-container {
-        display: flex;
-        justify-content: center;
-    }
+  #hero .heading-1,
+  #hero .sub-title,
+  #hero .typing-container {
+    justify-content: center;
+  }
+
+  .typing-container {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1120px) {
-    #hero {
-        padding-bottom: 90px;
-    }
+  #hero {
+    padding-bottom: 90px;
+  }
 
-    #hero .wrapper .buttons-wrapper {
-        margin-bottom: 30px;
-    }
+  #hero .wrapper .buttons-wrapper {
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: 1151px) {
-    .typing-text.cybersecurity-engineer {
-        font-size: 0.7em !important;
-    }
+  .typing-text.cybersecurity-engineer {
+    font-size: 0.7em !important;
+  }
 }
 
 /* New media query for viewports wider than 1050px */
 /* @media (min-width: 1051px) {
     #hero .hero-image {
         margin-left: 10px;  */
-        /* Adjust this value as needed to move the image to the left */
-    /* }
+/* Adjust this value as needed to move the image to the left */
+/* }
 } */
- 
